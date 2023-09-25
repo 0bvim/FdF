@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:37:50 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/09/25 04:20:57 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/09/25 05:54:29 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int32_t	main(void)
 	mlx_t	*mlx = mlx_init(WIDTH, HEIGHT, "FdF", true);
 	if (!mlx)
 		ft_error();
-	write(1, "a", 1);
 	mlx_image_t	*img = mlx_new_image(mlx, 256, 256);
 	if (!img || (mlx_image_to_window(mlx, img, 0, 0) < 0))
 		ft_error();

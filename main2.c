@@ -1,39 +1,50 @@
-#include <stdio.h>
-#include <stdlib.h>	
-#include <mlx.h>
+#include "fdf.h"
 
 #define ESC 65307
 
-typedef struct struct_ponteiros {
-	void	*mlx;
-	void	*janela;
-}	tipo_ponteiros;
+static void	ft_hook(void *param);
+void	closew(mlx_key_data_t key, void *param);
 
-int	checa_teclas(int tecla, tipo_ponteiros *ponteiros) {
-	if (tecla == ESC) {
-		printf("Fechando a janela e encerrando o programa...\n");
-		mlx_destroy_window(ponteiros->mlx, ponteiros->janela);
-		mlx_destroy_display(ponteiros->mlx);
-		free(ponteiros->mlx);
-		exit(0);
-	}
-	else
-		printf("Voce pressionou a tecla: %c\n", tecla);
-	return (0);
+int	main(void)
+{
+	// Open window maximized
+	mlx_set_setting(MLX_MAXIMIZED, false);
+
+	// Set responsive
+	mlx_set_setting(MLX_STRETCH_IMAGE, true);
+	// Create a new MLX windows
+	mlx_t	*mlx = mlx_init(800, 600, "FckDerFkr", true);
+
+	// Get the window image
+	mlx_image_t	*image = mlx_new_image(mlx, WIDTH, HEIGHT);
+	
+	// Set the line color
+	mlx_put_pixel (image, 10, 10, 0xFF0000FF);
+	
+	// Display the image
+	mlx_image_to_window(mlx, image, 250, 250);
+
+	// Wait for a key press
+	mlx_key_hook(mlx, closew, mlx);
+
+	//mlx_loop_hook(mlx, ft_hook, mlx);
+	// Destroy the window
+	mlx_loop(mlx);
+	mlx_terminate(mlx);
 }
 
-int main() {
-	tipo_ponteiros	ponteiros;
-	void			*ponteiro_da_mlx;
-	void			*ponteiro_da_janela;
+//static void	ft_hook(void *param)
+//{
+//	mlx_t	*mlx = param;
+//
+//	if (mlx_is_key_down(mlx, MLX_KEY_SPACE))
+//		mlx_close_window(mlx);
+//}
 
-	ponteiro_da_mlx = mlx_init();
+void	closew(mlx_key_data_t key, void *param)
+{
+	mlx_t	*mlx = param;
 
-	ponteiro_da_janela = mlx_new_window(ponteiro_da_mlx, 200, 200, "Janela");
-
-	ponteiros.mlx = ponteiro_da_mlx;
-	ponteiros.janela = ponteiro_da_janela;
-
-	mlx_key_hook(ponteiros.janela, checa_teclas, &ponteiros);
-	mlx_loop(ponteiro_da_mlx);
+	if (key.key == MLX_KEY_ESCAPE)
+		mlx_terminate(mlx);
 }

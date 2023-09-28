@@ -33,7 +33,7 @@ int	main(void)
 	ft_line(image, mlx, color);	
 	//mlx_loop_hook(mlx, ft_hook, image);
 	mlx_loop(mlx);
-	mlx_terminate(mlx);
+	//mlx_terminate(mlx);
 }
 
 //static void	ft_hook(void *param) // finish this function
@@ -43,7 +43,9 @@ void	closew(mlx_key_data_t key, void *param)
 	mlx_t	*mlx = param;
 
 	if (key.key == MLX_KEY_ESCAPE)
-		mlx_terminate(mlx);
+	{
+		mlx_close_window(mlx);
+	}
 }
 
 void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color)

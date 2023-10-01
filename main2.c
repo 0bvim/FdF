@@ -1,9 +1,8 @@
 #include "fdf.h"
 
-#define ESC 65307
 
 static void	ft_hook(void *param);
-void	closew(mlx_key_data_t key, void *param);
+void	keys(mlx_key_data_t key, void *param);
 void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color);
 
 int	main(void)
@@ -27,10 +26,10 @@ int	main(void)
 	mlx_image_to_window(mlx, image, 10, 10);
 
 	// Destroy the window and wait for a key press
-	mlx_key_hook(mlx, closew, mlx);
+	mlx_key_hook(mlx, keys, mlx);
 
 	// loop to print line in the window
-	ft_line(image, mlx, color);	
+	ft_line(image, mlx, color);
 	//mlx_loop_hook(mlx, ft_hook, image);
 	mlx_loop(mlx);
 	//mlx_terminate(mlx);
@@ -38,53 +37,45 @@ int	main(void)
 
 //static void	ft_hook(void *param) // finish this function
 
-void	closew(mlx_key_data_t key, void *param)
+void	keys(mlx_key_data_t key, void *param)
 {
 	mlx_t	*mlx = param;
 
 	if (key.key == MLX_KEY_ESCAPE)
-	{
 		mlx_close_window(mlx);
-	}
+	else if (key.key == MLX_KEY_END)
+		mlx_close_window(mlx);
 }
-
-typedef struct s_xyz t_xyz;
-struct s_xyz
-{
-	uint32_t	x;
-	uint32_t	y;
-	uint32_t	z;
-	t_xyz		*next;
-};
 
 void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color)
 {
-	t_xyz	map;
+	uint32_t	dx;
+	uint32_t	dy;
+	t_trid	p1;
+	t_trid	p2;
 
-	map.x = 0;
-	map.y = 0;
-	map.z = 0;
-	map.next = NULL;
-	for(map.x = 0; map.x < 50; map.x++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	p1.x = 80;
+	p1.y = 0;
+	p1.z = 0;
+	p2.x = 100;
+	p2.y = 0;
+	p2.z = 0;
 
-	map.y = 50;
-	for( map.x = 0; map.x < 50; map.x++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	dx = p2.x - p1.x;
+	dy = p2.y - p1.y;
+	
+	while (dx)
+		mlx_put_pixel(image, dx, dy, color);
 
-	map.x = 0;
-	for( map.y = 0; map.y < 50; map.y++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	dy = 50;
+	for(dx = 0; dx < 50; dx++)
+		mlx_put_pixel(image, dx, dy, color);
 
-	map.x = 50;
-	for( map.y = 0; map.y < 50; map.y++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	dx = 0;
+	for(dy = 0; dy < 50; dy++)
+		mlx_put_pixel(image, dx, dy, color);
+
+	dx = 50;
+	for(dy = 0; dy < 50; dy++)
+		mlx_put_pixel(image, dx, dy, color);
 }

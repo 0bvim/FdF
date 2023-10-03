@@ -5,6 +5,13 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
+$(VERBOSE).SILENT	MLX42/build/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE)MAKESILENT	MLX42/build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+%	MLX42/build/Makefile	/^% : %,v$/;"	t
+%	MLX42/build/Makefile	/^% : RCS\/%$/;"	t
+%	MLX42/build/Makefile	/^% : RCS\/%,v$/;"	t
+%	MLX42/build/Makefile	/^% : SCCS\/s.%$/;"	t
+%	MLX42/build/Makefile	/^% : s.%$/;"	t
 **Found a bug?**	MLX42/CONTRIBUTING.md	/^## **Found a bug?**$/;"	s
 1. Warning	MLX42/CODE_OF_CONDUCT.md	/^### 1. Warning$/;"	S
 2. Temporary Ban	MLX42/CODE_OF_CONDUCT.md	/^### 2. Temporary Ban$/;"	S
@@ -17,6 +24,12 @@ ADAM7_IY	MLX42/lib/png/lodepng.c	/^static const unsigned ADAM7_IY[7] = { 0, 0, 4
 APIENTRY	MLX42/include/glad/glad.h	/^#define APIENTRY /;"	d
 APIENTRY	MLX42/include/glad/glad.h	/^#define APIENTRY$/;"	d
 APIENTRYP	MLX42/include/glad/glad.h	/^#define APIENTRYP /;"	d
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
 Adam7_deinterlace	MLX42/lib/png/lodepng.c	/^static void Adam7_deinterlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned /;"	f	typeref:typename:void	file:
 Adam7_getpassvalues	MLX42/lib/png/lodepng.c	/^static void Adam7_getpassvalues(unsigned passw[7], unsigned passh[7], size_t filter_passstart[8]/;"	f	typeref:typename:void	file:
 Adam7_interlace	MLX42/lib/png/lodepng.c	/^static void Adam7_interlace(unsigned char* out, const unsigned char* in, unsigned w, unsigned h,/;"	f	typeref:typename:void	file:
@@ -41,12 +54,195 @@ CERROR_RETURN	MLX42/lib/png/lodepng.c	/^#define CERROR_RETURN(/;"	d	file:
 CERROR_RETURN_ERROR	MLX42/lib/png/lodepng.c	/^#define CERROR_RETURN_ERROR(/;"	d	file:
 CERROR_TRY_RETURN	MLX42/lib/png/lodepng.c	/^#define CERROR_TRY_RETURN(/;"	d	file:
 CLCL_ORDER	MLX42/lib/png/lodepng.c	/^static const unsigned CLCL_ORDER[NUM_CODE_LENGTH_CODES]$/;"	v	typeref:typename:const unsigned[]	file:
+CMAKE_AR	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	MLX42/build/Makefile	/^CMAKE_BINARY_DIR = \/nfs\/homes\/vde-frei\/common_core\/FdF\/MLX42\/build$/;"	m
+CMAKE_C11_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C17_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C17_COMPILE_FEATURES "c_std_17")$/;"	v
+CMAKE_C23_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C23_COMPILE_FEATURES "c_std_23")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	MLX42/build/Makefile	/^CMAKE_COMMAND = \/nfs\/homes\/vde-frei\/.local\/lib\/python3.8\/site-packages\/cmake\/data\/bin\//;"	m
+CMAKE_COMPILER_IS_GNUCC	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC )$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX )$/;"	v
+CMAKE_CROSSCOMPILING	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	MLX42/build/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX23_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX_ABI_COMPILED	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_BYTE_ORDER	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_COMPILER	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER_ABI	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_AR	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/llvm-ar-12")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "Clang")$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/llvm-ranlib-12")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "12.0.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_WORKS	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/10;\/usr\/include\/x86_64-linux/;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-linux-gnu\/10;\/usr\/lib\/x86_6/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")$/;"	v
+CMAKE_CXX_LINKER_DEPFILE_SUPPORTED	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_DEPFILE_SUPPORTED FALSE)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;m;mm;mpp;CPP;ixx;cppm;ccm;cxxm;c++m)$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
+CMAKE_C_ABI_COMPILED	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_BYTE_ORDER	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_AR	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/llvm-ar-12")$/;"	v
+CMAKE_C_COMPILER_ARG1	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "GNU")$/;"	v
+CMAKE_C_COMPILER_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "Clang")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/llvm-ranlib-12")$/;"	v
+CMAKE_C_COMPILER_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "12.0.0")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
 CMAKE_C_EXTENSIONS	MLX42/CMakeLists.txt	/^set(CMAKE_C_EXTENSIONS OFF)$/;"	v
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/local\/include;\/usr\/lib\/llvm-12\/lib\/clang\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-linux-gnu\/10;\/usr\/lib\/x86_64-/;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")$/;"	v
+CMAKE_C_LINKER_DEPFILE_SUPPORTED	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_DEPFILE_SUPPORTED FALSE)$/;"	v
+CMAKE_C_LINKER_PREFERENCE	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
 CMAKE_C_STANDARD	MLX42/CMakeLists.txt	/^set(CMAKE_C_STANDARD 11)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")$/;"	v
 CMAKE_C_STANDARD_REQUIRED	MLX42/CMakeLists.txt	/^set(CMAKE_C_STANDARD_REQUIRED ON)$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	MLX42/build/CMakeFiles/mlx42.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_GENERATOR	MLX42/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	MLX42/build/CMakeFiles/mlx42.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_LANGUAGES	MLX42/build/CMakeFiles/mlx42.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	MLX42/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
 CMAKE_DIR	MLX42/CMakeLists.txt	/^set(CMAKE_DIR ${CMAKE_CURRENT_SOURCE_DIR}\/cmake)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_LINKED_INFO_FILES	MLX42/build/CMakeFiles/mlx42.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	MLX42/build/CMakeFiles/mlx42.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.4.0-163-generic")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.4.0-163-generic")$/;"	v
+CMAKE_INSTALL_COMPONENT	MLX42/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	MLX42/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	MLX42/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_MANIFEST	MLX42/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	MLX42/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	MLX42/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	MLX42/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "1")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")$/;"	v
+CMAKE_LINKER	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	MLX42/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	MLX42/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	MLX42/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_OBJDUMP	MLX42/build/cmake_install.cmake	/^  set(CMAKE_OBJDUMP "\/usr\/bin\/objdump")$/;"	v
 CMAKE_POSITION_INDEPENDENT_CODE	MLX42/CMakeLists.txt	/^set(CMAKE_POSITION_INDEPENDENT_CODE ON)$/;"	v
+CMAKE_RANLIB	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/nfs\/homes\/vde-frei\/common_core\/FdF\/MLX42\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	MLX42/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/nfs\/homes\/vde-frei\/common_core\/FdF\/MLX42")$/;"	v
 CMAKE_RUNTIME_OUTPUT_DIRECTORY	MLX42/CMakeLists.txt	/^set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})$/;"	v
+CMAKE_SIZEOF_VOID_P	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	MLX42/build/Makefile	/^CMAKE_SOURCE_DIR = \/nfs\/homes\/vde-frei\/common_core\/FdF\/MLX42$/;"	m
+CMAKE_SYSTEM	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.4.0-163-generic")$/;"	v
+CMAKE_SYSTEM_LOADED	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	MLX42/build/CMakeFiles/3.27.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.4.0-163-generic")$/;"	v
+CMAKE_TAPI	MLX42/build/CMakeFiles/3.27.5/CMakeCCompiler.cmake	/^set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")$/;"	v
+CMAKE_TAPI	MLX42/build/CMakeFiles/3.27.5/CMakeCXXCompiler.cmake	/^set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")$/;"	v
+COMPILER_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CXX_STD	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
+CXX_STD	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
+CXX_STD	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
+C_VERSION	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
+C_VERSION	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
+C_VERSION	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
 Close Hook	MLX42/docs/Hooks.md	/^### Close Hook$/;"	S
 ColorTree	MLX42/lib/png/lodepng.c	/^struct ColorTree {$/;"	s	file:
 ColorTree	MLX42/lib/png/lodepng.c	/^typedef struct ColorTree ColorTree;$/;"	t	typeref:struct:ColorTree	file:
@@ -58,6 +254,8 @@ Contributing	MLX42/CONTRIBUTING.md	/^## Contributing$/;"	s
 Contributor Covenant Code of Conduct	MLX42/CODE_OF_CONDUCT.md	/^# Contributor Covenant Code of Conduct$/;"	c
 Cross-Platform 🖥️	MLX42/README.md	/^## Cross-Platform 🖥️$/;"	s
 DEBUG	MLX42/CMakeLists.txt	/^set(DEBUG		OFF CACHE BOOL "Build MLX42 in debug mode, enabling assertions")$/;"	v
+DEC	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
 DEFAULT_WINDOWSIZE	MLX42/lib/png/lodepng.c	/^#define DEFAULT_WINDOWSIZE /;"	d	file:
 DISTANCEBASE	MLX42/lib/png/lodepng.c	/^static const unsigned DISTANCEBASE[30]$/;"	v	typeref:typename:const unsigned[30]	file:
 DISTANCEEXTRA	MLX42/lib/png/lodepng.c	/^static const unsigned DISTANCEEXTRA[30]$/;"	v	typeref:typename:const unsigned[30]	file:
@@ -66,6 +264,7 @@ Dependencies	MLX42/docs/42.md	/^#### Dependencies$/;"	t
 Documentation	MLX42/docs/42.md	/^### Documentation$/;"	S
 Documented 📚	MLX42/README.md	/^## Documented 📚$/;"	s
 Download and build - MLX42	MLX42/README.md	/^## Download and build - MLX42$/;"	s
+EQUALS	MLX42/build/Makefile	/^EQUALS = =$/;"	m
 ERROR_BREAK	MLX42/lib/png/lodepng.c	/^#define ERROR_BREAK(/;"	d	file:
 ESC	main2.c	/^#define ESC /;"	d	file:
 Encoding & Decoding	MLX42/docs/Colors.md	/^## Encoding & Decoding$/;"	s
@@ -2020,7 +2219,10 @@ HASH_BIT_MASK	MLX42/lib/png/lodepng.c	/^static const unsigned HASH_BIT_MASK = 65
 HASH_NUM_VALUES	MLX42/lib/png/lodepng.c	/^static const unsigned HASH_NUM_VALUES = 65536;$/;"	v	typeref:typename:const unsigned	file:
 HAVE_WINAPIFAMILY	MLX42/lib/glad/glad.c	/^    #define HAVE_WINAPIFAMILY /;"	d	file:
 HAVE_WINAPIFAMILY	MLX42/lib/glad/glad.c	/^  #define HAVE_WINAPIFAMILY /;"	d	file:
+HEIGHT	fdf.h	/^# define HEIGHT /;"	d
 HEIGHT	main.c	/^# define HEIGHT /;"	d	file:
+HEX	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 Hash	MLX42/lib/png/lodepng.c	/^typedef struct Hash {$/;"	s	file:
 Hash	MLX42/lib/png/lodepng.c	/^} Hash;$/;"	t	typeref:struct:Hash	file:
 Homebrew	MLX42/README.md	/^# Homebrew$/;"	c
@@ -2036,6 +2238,7 @@ HuffmanTree_makeFromFrequencies	MLX42/lib/png/lodepng.c	/^static unsigned Huffma
 HuffmanTree_makeFromLengths	MLX42/lib/png/lodepng.c	/^static unsigned HuffmanTree_makeFromLengths(HuffmanTree* tree, const unsigned* bitlen,$/;"	f	typeref:typename:unsigned	file:
 HuffmanTree_makeFromLengths2	MLX42/lib/png/lodepng.c	/^static unsigned HuffmanTree_makeFromLengths2(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
 HuffmanTree_makeTable	MLX42/lib/png/lodepng.c	/^static unsigned HuffmanTree_makeTable(HuffmanTree* tree) {$/;"	f	typeref:typename:unsigned	file:
+ID_VOID_MAIN	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 INVALIDSYMBOL	MLX42/lib/png/lodepng.c	/^#define INVALIDSYMBOL /;"	d	file:
 IS_UWP	MLX42/lib/glad/glad.c	/^    #define IS_UWP /;"	d	file:
 Images	MLX42/docs/Images.md	/^# Images$/;"	c
@@ -3370,12 +3573,44 @@ PFNGLWINDOWPOS3SPROC	MLX42/include/glad/glad.h	/^typedef void (APIENTRYP PFNGLWI
 PFNGLWINDOWPOS3SVPROC	MLX42/include/glad/glad.h	/^typedef void (APIENTRYP PFNGLWINDOWPOS3SVPROC)(const GLshort *v);$/;"	t	typeref:typename:void (APIENTRYP)(const GLshort * v)
 PFNGLXGETPROCADDRESSPROC_PRIVATE	MLX42/lib/glad/glad.c	/^typedef void* (APIENTRYP PFNGLXGETPROCADDRESSPROC_PRIVATE)(const char*);$/;"	t	typeref:typename:void * (APIENTRYP)(const char *)	file:
 PFNWGLGETPROCADDRESSPROC_PRIVATE	MLX42/lib/glad/glad.c	/^typedef void* (APIENTRYP PFNWGLGETPROCADDRESSPROC_PRIVATE)(const char*);$/;"	t	typeref:typename:void * (APIENTRYP)(const char *)	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
 Performance 🚀	MLX42/README.md	/^## Performance 🚀$/;"	s
+RM	MLX42/build/Makefile	/^RM = \/nfs\/homes\/vde-frei\/.local\/lib\/python3.8\/site-packages\/cmake\/data\/bin\/cmake -E r/;"	m
 Read the wiki for repo codestyle!	MLX42/CONTRIBUTING.md	/^## Read the wiki for repo codestyle!$/;"	s
 Rendering	MLX42/docs/42.md	/^### Rendering$/;"	S
 Reporting a Vulnerability	MLX42/SECURITY.md	/^## Reporting a Vulnerability$/;"	s
 Resize Hook	MLX42/docs/Hooks.md	/^### Resize Hook$/;"	S
+SHELL	MLX42/build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
 SOURCE_DIR	MLX42/CMakeLists.txt	/^set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}\/src)$/;"	v
+STRINGIFY	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
 Scope	MLX42/CODE_OF_CONDUCT.md	/^## Scope$/;"	s
 Scroll Example	MLX42/docs/Hooks.md	/^## Scroll Example$/;"	s
 Scroll hook	MLX42/docs/Hooks.md	/^### Scroll hook$/;"	S
@@ -3405,6 +3640,7 @@ Tools	MLX42/docs/XPM42.md	/^## Tools$/;"	s
 Transparency	MLX42/docs/Images.md	/^## Transparency$/;"	s
 Unit tests	MLX42/README.md	/^### Unit tests$/;"	S
 Via [Homebrew](https://brew.sh/) / [42Homebrew](https://github.com/kube/42homebrew)	MLX42/README.md	/^#### Via [Homebrew](https:\/\/brew.sh\/) \/ [42Homebrew](https:\/\/github.com\/kube\/42homebrew)$/;"	t
+WIDTH	fdf.h	/^# define WIDTH /;"	d
 WIDTH	main.c	/^# define WIDTH /;"	d	file:
 WRITEBIT	MLX42/lib/png/lodepng.c	/^#define WRITEBIT(/;"	d	file:
 Window	MLX42/tests/WindowFixture.hpp	/^class Window : public ::testing::Test$/;"	c
@@ -3416,6 +3652,8 @@ __anon24854bff0208	MLX42/lib/png/lodepng.c	/^typedef struct {$/;"	s	file:
 __anon754444520103	MLX42/include/KHR/khrplatform.h	/^typedef enum {$/;"	g
 __gl_h_	MLX42/include/glad/glad.h	/^#define __gl_h_$/;"	d
 __glad_h_	MLX42/include/glad/glad.h	/^#define __glad_h_$/;"	d
+__has_include	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
+__has_include	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
 __khrplatform_h_	MLX42/include/KHR/khrplatform.h	/^#define __khrplatform_h_$/;"	d
 _glfw3_HEADER_SEARCH_DIRS	MLX42/cmake/Findglfw3.cmake	/^set(_glfw3_HEADER_SEARCH_DIRS$/;"	v
 _glfw3_LIB_SEARCH_DIRS	MLX42/cmake/Findglfw3.cmake	/^set(_glfw3_LIB_SEARCH_DIRS$/;"	v
@@ -3445,6 +3683,7 @@ addUnknownChunks	MLX42/lib/png/lodepng.c	/^static unsigned addUnknownChunks(ucve
 add_id	MLX42/include/lodepng/lodepng.h	/^  unsigned add_id;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
 adler32	MLX42/lib/png/lodepng.c	/^static unsigned adler32(const unsigned char* data, unsigned len) {$/;"	f	typeref:typename:unsigned	file:
 advanceBits	MLX42/lib/png/lodepng.c	/^static LODEPNG_INLINE void advanceBits(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:LODEPNG_INLINE void	file:
+all	MLX42/build/Makefile	/^all: cmake_check_build_system$/;"	t
 alloc_string	MLX42/lib/png/lodepng.c	/^static char* alloc_string(const char* in) {$/;"	f	typeref:typename:char *	file:
 alloc_string_sized	MLX42/lib/png/lodepng.c	/^static char* alloc_string_sized(const char* in, size_t insize) {$/;"	f	typeref:typename:char *	file:
 allocsize	MLX42/lib/png/lodepng.c	/^  size_t allocsize; \/*allocated size in bytes*\/$/;"	m	struct:uivector	typeref:typename:size_t	file:
@@ -3477,7 +3716,6 @@ chain	MLX42/lib/png/lodepng.c	/^  unsigned short* chain;$/;"	m	struct:Hash	typer
 chains0	MLX42/lib/png/lodepng.c	/^  BPMNode** chains0;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
 chains1	MLX42/lib/png/lodepng.c	/^  BPMNode** chains1;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
 chainz	MLX42/lib/png/lodepng.c	/^  unsigned short* chainz; \/*those with same amount of zeros*\/$/;"	m	struct:Hash	typeref:typename:unsigned short *	file:
-checa_teclas	main2.c	/^int	checa_teclas(int tecla, tipo_ponteiros *ponteiros) {$/;"	f	typeref:typename:int
 checkColorValidity	MLX42/lib/png/lodepng.c	/^static unsigned checkColorValidity(LodePNGColorType colortype, unsigned bd) {$/;"	f	typeref:typename:unsigned	file:
 children	MLX42/lib/png/lodepng.c	/^  ColorTree* children[16]; \/*up to 16 pointers to ColorTree of next level*\/$/;"	m	struct:ColorTree	typeref:typename:ColorTree * [16]	file:
 chrm_blue_x	MLX42/include/lodepng/lodepng.h	/^  unsigned chrm_blue_x;  \/* Blue x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
@@ -3489,8 +3727,12 @@ chrm_red_x	MLX42/include/lodepng/lodepng.h	/^  unsigned chrm_red_x;   \/* Red x 
 chrm_red_y	MLX42/include/lodepng/lodepng.h	/^  unsigned chrm_red_y;   \/* Red y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
 chrm_white_x	MLX42/include/lodepng/lodepng.h	/^  unsigned chrm_white_x; \/* White Point x times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
 chrm_white_y	MLX42/include/lodepng/lodepng.h	/^  unsigned chrm_white_y; \/* White Point y times 100000 *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+clean	MLX42/build/Makefile	/^clean:$/;"	t
+clean/fast	MLX42/build/Makefile	/^clean\/fast: clean$/;"	t
 close_gl	MLX42/lib/glad/glad.c	/^void close_gl(void) {$/;"	f	typeref:typename:void	file:
 close_hook	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_close_t		close_hook;$/;"	m	struct:mlx_ctx	typeref:typename:mlx_close_t
+cmake_check_build_system	MLX42/build/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	MLX42/build/Makefile	/^cmake_force:$/;"	t
 codes	MLX42/lib/png/lodepng.c	/^  unsigned* codes; \/*the huffman codes (bit patterns representing the symbols)*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned *	file:
 color	MLX42/include/lodepng/lodepng.h	/^  LodePNGColorMode color;     \/*color type and bits, palette and transparency of the PNG file*\/$/;"	m	struct:LodePNGInfo	typeref:typename:LodePNGColorMode
 color_convert	MLX42/include/lodepng/lodepng.h	/^  unsigned color_convert; \/*whether to convert the PNG to the color type you want. Default: yes/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
@@ -3506,6 +3748,7 @@ colours	MLX42/tools/xpm3_conv.py	/^colours = {$/;"	v
 compress	MLX42/lib/png/lodepng.c	/^unsigned compress(std::vector<unsigned char>& out, const std::vector<unsigned char>& in,$/;"	f	typeref:typename:unsigned
 compress	MLX42/lib/png/lodepng.c	/^unsigned compress(std::vector<unsigned char>& out, const unsigned char* in, size_t insize,$/;"	f	typeref:typename:unsigned
 compression_method	MLX42/include/lodepng/lodepng.h	/^  unsigned compression_method;\/*compression method of the original file. Always 0.*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
+const	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
 content	MLX42/include/MLX42/MLX42_Int.h	/^	void*				content;$/;"	m	struct:mlx_list	typeref:typename:void *
 context	MLX42/include/MLX42/MLX42.h	/^	void*			context;$/;"	m	struct:mlx_image	typeref:typename:void *
 context	MLX42/include/MLX42/MLX42.h	/^	void*		context;$/;"	m	struct:mlx	typeref:typename:void *
@@ -3533,13 +3776,17 @@ decodeGeneric	MLX42/lib/png/lodepng.c	/^static void decodeGeneric(unsigned char*
 decoder	MLX42/include/lodepng/lodepng.h	/^  LodePNGDecoderSettings decoder; \/*the decoding settings*\/$/;"	m	struct:LodePNGState	typeref:typename:LodePNGDecoderSettings
 decompress	MLX42/lib/png/lodepng.c	/^unsigned decompress(std::vector<unsigned char>& out, const std::vector<unsigned char>& in,$/;"	f	typeref:typename:unsigned
 decompress	MLX42/lib/png/lodepng.c	/^unsigned decompress(std::vector<unsigned char>& out, const unsigned char* in, size_t insize,$/;"	f	typeref:typename:unsigned
+default_target	MLX42/build/Makefile	/^default_target: all$/;"	t
 deflate	MLX42/lib/png/lodepng.c	/^static unsigned deflate(unsigned char** out, size_t* outsize,$/;"	f	typeref:typename:unsigned	file:
 deflateDynamic	MLX42/lib/png/lodepng.c	/^static unsigned deflateDynamic(LodePNGBitWriter* writer, Hash* hash,$/;"	f	typeref:typename:unsigned	file:
 deflateFixed	MLX42/lib/png/lodepng.c	/^static unsigned deflateFixed(LodePNGBitWriter* writer, Hash* hash,$/;"	f	typeref:typename:unsigned	file:
 deflateNoCompression	MLX42/lib/png/lodepng.c	/^static unsigned deflateNoCompression(ucvector* out, const unsigned char* data, size_t datasize) /;"	f	typeref:typename:unsigned	file:
 delta_time	MLX42/include/MLX42/MLX42.h	/^	double		delta_time;$/;"	m	struct:mlx	typeref:typename:double
+depend	MLX42/build/Makefile	/^depend:$/;"	t
 draw_queue	MLX42/include/MLX42/MLX42_Int.h	/^typedef struct draw_queue$/;"	s
 draw_queue_t	MLX42/include/MLX42/MLX42_Int.h	/^}	draw_queue_t;$/;"	t	typeref:struct:draw_queue
+edit_cache	MLX42/build/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	MLX42/build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 enabled	MLX42/include/MLX42/MLX42.h	/^	bool			enabled;$/;"	m	struct:mlx_image	typeref:typename:bool
 enabled	MLX42/include/MLX42/MLX42.h	/^	bool	enabled;$/;"	m	struct:mlx_instance	typeref:typename:bool
 encode	MLX42/lib/png/lodepng.c	/^unsigned encode(const std::string& filename,$/;"	f	typeref:typename:unsigned
@@ -3564,12 +3811,14 @@ find_extensionsGL	MLX42/lib/glad/glad.c	/^static int find_extensionsGL(void) {$/
 fnotfound	MLX42/tools/compile_shader.bat	/^:fnotfound$/;"	l
 font_atlas	MLX42/src/font/font.h	/^}	font_atlas = {$/;"	v	typeref:struct:s_font
 force_palette	MLX42/include/lodepng/lodepng.h	/^  unsigned force_palette;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:unsigned
+frag_shader	MLX42/build/mlx_frag_shader.c	/^const char* frag_shader = "#version 330 core\\n"$/;"	v	typeref:typename:const char *
 framebuffer_callback	MLX42/src/mlx_init.c	/^static void framebuffer_callback(GLFWwindow *window, int width, int height)$/;"	f	typeref:typename:void	file:
 free_exts	MLX42/lib/glad/glad.c	/^static void free_exts(void) {$/;"	f	typeref:typename:void	file:
 freelist	MLX42/lib/png/lodepng.c	/^  BPMNode** freelist;$/;"	m	struct:BPMLists	typeref:typename:BPMNode **	file:
 ft_draw	MLX42/tests/tests.cpp	/^static void ft_draw(void* param)$/;"	f	typeref:typename:void	file:
 ft_error	main.c	/^static void	ft_error(void)$/;"	f	typeref:typename:void	file:
 ft_hook	main.c	/^static void	ft_hook(void *param)$/;"	f	typeref:typename:void	file:
+ft_line	main2.c	/^void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color)$/;"	f	typeref:typename:void
 func	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_closefunc	func;$/;"	m	struct:mlx_close	typeref:typename:mlx_closefunc
 func	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_cursorfunc	func;$/;"	m	struct:mlx_cursor	typeref:typename:mlx_cursorfunc
 func	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_keyfunc		func;$/;"	m	struct:mlx_key	typeref:typename:mlx_keyfunc
@@ -6753,6 +7002,7 @@ height	MLX42/include/MLX42/MLX42.h	/^	int32_t		height;$/;"	m	struct:mlx	typeref:
 height	MLX42/include/MLX42/MLX42.h	/^	uint32_t	height;$/;"	m	struct:mlx_texture	typeref:typename:uint32_t
 height	MLX42/src/font/font.h	/^	uint32_t		height;$/;"	m	struct:s_font	typeref:typename:uint32_t
 height	MLX42/tests/WindowFixture.hpp	/^	static const int32_t height = 400;$/;"	m	class:Window	typeref:typename:const int32_t
+help	MLX42/build/Makefile	/^help:$/;"	t
 hooks	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_list_t*		hooks;$/;"	m	struct:mlx_ctx	typeref:typename:mlx_list_t *
 hour	MLX42/include/lodepng/lodepng.h	/^  unsigned hour;    \/*0-23*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
 huffmanDecodeSymbol	MLX42/lib/png/lodepng.c	/^static unsigned huffmanDecodeSymbol(LodePNGBitReader* reader, const HuffmanTree* codetree) {$/;"	f	typeref:typename:unsigned	file:
@@ -6775,10 +7025,40 @@ index	MLX42/lib/png/lodepng.c	/^  unsigned index; \/*index of this leaf node (ca
 inflateHuffmanBlock	MLX42/lib/png/lodepng.c	/^static unsigned inflateHuffmanBlock(ucvector* out, LodePNGBitReader* reader,$/;"	f	typeref:typename:unsigned	file:
 inflateNoCompression	MLX42/lib/png/lodepng.c	/^static unsigned inflateNoCompression(ucvector* out, LodePNGBitReader* reader,$/;"	f	typeref:typename:unsigned	file:
 inflatev	MLX42/lib/png/lodepng.c	/^static unsigned inflatev(ucvector* out, const unsigned char* in, size_t insize,$/;"	f	typeref:typename:unsigned	file:
+info_arch	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_extensions_default	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_extensions_default	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_standard_default	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v	typeref:typename:const char *
+info_language_standard_default	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v	typeref:typename:const char *
+info_platform	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
 info_png	MLX42/include/lodepng/lodepng.h	/^  LodePNGInfo info_png; \/*info of the PNG image obtained after decoding*\/$/;"	m	struct:LodePNGState	typeref:typename:LodePNGInfo
 info_raw	MLX42/include/lodepng/lodepng.h	/^  LodePNGColorMode info_raw; \/*specifies the format in which you would like to get the raw pixe/;"	m	struct:LodePNGState	typeref:typename:LodePNGColorMode
+info_simulate	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version_internal	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
+info_version_internal	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
 initialHeight	MLX42/include/MLX42/MLX42_Int.h	/^	int32_t			initialHeight;$/;"	m	struct:mlx_ctx	typeref:typename:int32_t
 initialWidth	MLX42/include/MLX42/MLX42_Int.h	/^	int32_t			initialWidth;$/;"	m	struct:mlx_ctx	typeref:typename:int32_t
+install	MLX42/build/Makefile	/^install: preinstall$/;"	t
+install/fast	MLX42/build/Makefile	/^install\/fast: preinstall\/fast$/;"	t
+install/local	MLX42/build/Makefile	/^install\/local: preinstall$/;"	t
+install/local/fast	MLX42/build/Makefile	/^install\/local\/fast: preinstall\/fast$/;"	t
+install/strip	MLX42/build/Makefile	/^install\/strip: preinstall$/;"	t
+install/strip/fast	MLX42/build/Makefile	/^install\/strip\/fast: preinstall\/fast$/;"	t
 instanceid	MLX42/include/MLX42/MLX42_Int.h	/^	int32_t			instanceid;$/;"	m	struct:draw_queue	typeref:typename:int32_t
 instances	MLX42/include/MLX42/MLX42.h	/^	mlx_instance_t*	instances;$/;"	m	struct:mlx_image	typeref:typename:mlx_instance_t *
 instances_capacity	MLX42/include/MLX42/MLX42_Int.h	/^	size_t	instances_capacity;$/;"	m	struct:mlx_image_ctx	typeref:typename:size_t
@@ -6790,7 +7070,6 @@ itext_langtags	MLX42/include/lodepng/lodepng.h	/^  char** itext_langtags; \/*lan
 itext_num	MLX42/include/lodepng/lodepng.h	/^  size_t itext_num; \/*the amount of international texts in this PNG*\/$/;"	m	struct:LodePNGInfo	typeref:typename:size_t
 itext_strings	MLX42/include/lodepng/lodepng.h	/^  char** itext_strings; \/*the actual international text - UTF-8 string*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
 itext_transkeys	MLX42/include/lodepng/lodepng.h	/^  char** itext_transkeys; \/*keyword translated to the international language - UTF-8 string*\/$/;"	m	struct:LodePNGInfo	typeref:typename:char **
-janela	main2.c	/^	void	*janela;$/;"	m	struct:struct_ponteiros	typeref:typename:void *	file:
 key	MLX42/include/MLX42/MLX42.h	/^	keys_t			key;$/;"	m	struct:mlx_key_data	typeref:typename:keys_t
 key	MLX42/include/lodepng/lodepng.h	/^  unsigned key; \/*image is not opaque and color key is possible instead of full alpha*\/$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned
 key_b	MLX42/include/lodepng/lodepng.h	/^  unsigned key_b;       \/*blue component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
@@ -6799,6 +7078,7 @@ key_defined	MLX42/include/lodepng/lodepng.h	/^  unsigned key_defined; \/*is a tr
 key_g	MLX42/include/lodepng/lodepng.h	/^  unsigned key_g;       \/*green component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
 key_g	MLX42/include/lodepng/lodepng.h	/^  unsigned short key_g;$/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned short
 key_hook	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_key_t		key_hook;$/;"	m	struct:mlx_ctx	typeref:typename:mlx_key_t
+key_press	main2.c	/^void	key_press(mlx_key_data_t key, void *param)$/;"	f	typeref:typename:void
 key_r	MLX42/include/lodepng/lodepng.h	/^  unsigned key_r;       \/*red\/grayscale component of color key*\/$/;"	m	struct:LodePNGColorMode	typeref:typename:unsigned
 key_r	MLX42/include/lodepng/lodepng.h	/^  unsigned short key_r; \/*key values, always as 16-bit, in 8-bit case the byte is duplicated, e/;"	m	struct:LodePNGColorStats	typeref:typename:unsigned short
 keys	MLX42/include/MLX42/MLX42.h	/^typedef enum keys$/;"	g
@@ -6837,8 +7117,22 @@ khronos_usize_t	MLX42/include/KHR/khrplatform.h	/^typedef unsigned long long int
 khronos_utime_nanoseconds_t	MLX42/include/KHR/khrplatform.h	/^typedef khronos_uint64_t       khronos_utime_nanoseconds_t;$/;"	t	typeref:typename:khronos_uint64_t
 lazymatching	MLX42/include/lodepng/lodepng.h	/^  unsigned lazymatching; \/*use lazy matching: better compression but a bit slower. Default: tru/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
 lengths	MLX42/lib/png/lodepng.c	/^  unsigned* lengths; \/*the lengths of the huffman codes*\/$/;"	m	struct:HuffmanTree	typeref:typename:unsigned *	file:
+lib/glad/glad.c.i	MLX42/build/Makefile	/^lib\/glad\/glad.c.i:$/;"	t
+lib/glad/glad.c.o	MLX42/build/Makefile	/^lib\/glad\/glad.c.o:$/;"	t
+lib/glad/glad.c.s	MLX42/build/Makefile	/^lib\/glad\/glad.c.s:$/;"	t
+lib/glad/glad.i	MLX42/build/Makefile	/^lib\/glad\/glad.i: lib\/glad\/glad.c.i$/;"	t
+lib/glad/glad.o	MLX42/build/Makefile	/^lib\/glad\/glad.o: lib\/glad\/glad.c.o$/;"	t
+lib/glad/glad.s	MLX42/build/Makefile	/^lib\/glad\/glad.s: lib\/glad\/glad.c.s$/;"	t
+lib/png/lodepng.c.i	MLX42/build/Makefile	/^lib\/png\/lodepng.c.i:$/;"	t
+lib/png/lodepng.c.o	MLX42/build/Makefile	/^lib\/png\/lodepng.c.o:$/;"	t
+lib/png/lodepng.c.s	MLX42/build/Makefile	/^lib\/png\/lodepng.c.s:$/;"	t
+lib/png/lodepng.i	MLX42/build/Makefile	/^lib\/png\/lodepng.i: lib\/png\/lodepng.c.i$/;"	t
+lib/png/lodepng.o	MLX42/build/Makefile	/^lib\/png\/lodepng.o: lib\/png\/lodepng.c.o$/;"	t
+lib/png/lodepng.s	MLX42/build/Makefile	/^lib\/png\/lodepng.s: lib\/png\/lodepng.c.s$/;"	t
 libGL	MLX42/lib/glad/glad.c	/^static HMODULE libGL;$/;"	v	typeref:typename:HMODULE	file:
 libGL	MLX42/lib/glad/glad.c	/^static void* libGL;$/;"	v	typeref:typename:void *	file:
+list_install_components	MLX42/build/Makefile	/^list_install_components:$/;"	t
+list_install_components/fast	MLX42/build/Makefile	/^list_install_components\/fast: list_install_components$/;"	t
 listsize	MLX42/lib/png/lodepng.c	/^  unsigned listsize;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
 load_GL_VERSION_1_0	MLX42/lib/glad/glad.c	/^static void load_GL_VERSION_1_0(GLADloadproc load) {$/;"	f	typeref:typename:void	file:
 load_GL_VERSION_1_1	MLX42/lib/glad/glad.c	/^static void load_GL_VERSION_1_1(GLADloadproc load) {$/;"	f	typeref:typename:void	file:
@@ -6974,9 +7268,12 @@ lodepng_strlen	MLX42/lib/png/lodepng.c	/^static size_t lodepng_strlen(const char
 lodepng_zlib_compress	MLX42/lib/png/lodepng.c	/^unsigned lodepng_zlib_compress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned
 lodepng_zlib_decompress	MLX42/lib/png/lodepng.c	/^unsigned lodepng_zlib_decompress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned
 lodepng_zlib_decompressv	MLX42/lib/png/lodepng.c	/^static unsigned lodepng_zlib_decompressv(ucvector* out,$/;"	f	typeref:typename:unsigned	file:
+main	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main	MLX42/tools/xpm3_conv.py	/^def main():$/;"	f
 main	main.c	/^int32_t	main(void)$/;"	f	typeref:typename:int32_t
-main	main2.c	/^int main() {$/;"	f	typeref:typename:int
+main	main2.c	/^int	main(void)$/;"	f	typeref:typename:int
 major	MLX42/include/glad/glad.h	/^    int major;$/;"	m	struct:gladGLversionStruct	typeref:typename:int
 max_icc_size	MLX42/include/lodepng/lodepng.h	/^  size_t max_icc_size;$/;"	m	struct:LodePNGDecoderSettings	typeref:typename:size_t
 max_loaded_major	MLX42/lib/glad/glad.c	/^static int max_loaded_major;$/;"	v	typeref:typename:int	file:
@@ -6991,9 +7288,10 @@ minor	MLX42/include/glad/glad.h	/^    int minor;$/;"	m	struct:gladGLversionStruc
 minute	MLX42/include/lodepng/lodepng.h	/^  unsigned minute;  \/*0-59*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
 mlx	MLX42/include/MLX42/MLX42.h	/^typedef struct mlx$/;"	s
 mlx	MLX42/tests/WindowFixture.hpp	/^	mlx_t* mlx = nullptr;$/;"	m	class:Window	typeref:typename:mlx_t *
-mlx	main2.c	/^	void	*mlx;$/;"	m	struct:struct_ponteiros	typeref:typename:void *	file:
 mlx42	MLX42/CMakeLists.txt	/^add_library(mlx42 STATIC$/;"	t
 mlx42	MLX42/CMakeLists.txt	/^project(mlx42 VERSION 2.3.2)$/;"	p
+mlx42	MLX42/build/Makefile	/^mlx42: cmake_check_build_system$/;"	t
+mlx42/fast	MLX42/build/Makefile	/^mlx42\/fast:$/;"	t
 mlx_bind_texture	MLX42/src/mlx_images.c	/^static int8_t mlx_bind_texture(mlx_ctx_t* mlx, mlx_image_t* img)$/;"	f	typeref:typename:int8_t	file:
 mlx_close	MLX42/include/MLX42/MLX42_Int.h	/^typedef struct mlx_close$/;"	s
 mlx_close_callback	MLX42/src/mlx_window.c	/^static void mlx_close_callback(GLFWwindow* window)$/;"	f	typeref:typename:void	file:
@@ -7030,6 +7328,12 @@ mlx_exec_loop_hooks	MLX42/src/mlx_loop.c	/^static void mlx_exec_loop_hooks(mlx_t
 mlx_flush_batch	MLX42/src/mlx_images.c	/^void mlx_flush_batch(mlx_ctx_t* mlx)$/;"	f	typeref:typename:void
 mlx_fnv_hash	MLX42/src/utils/mlx_utils.c	/^uint64_t mlx_fnv_hash(char* str, size_t len)$/;"	f	typeref:typename:uint64_t
 mlx_focus	MLX42/src/utils/mlx_utils.c	/^void mlx_focus(mlx_t* mlx)$/;"	f	typeref:typename:void
+mlx_frag_shader.c.i	MLX42/build/Makefile	/^mlx_frag_shader.c.i:$/;"	t
+mlx_frag_shader.c.o	MLX42/build/Makefile	/^mlx_frag_shader.c.o:$/;"	t
+mlx_frag_shader.c.s	MLX42/build/Makefile	/^mlx_frag_shader.c.s:$/;"	t
+mlx_frag_shader.i	MLX42/build/Makefile	/^mlx_frag_shader.i: mlx_frag_shader.c.i$/;"	t
+mlx_frag_shader.o	MLX42/build/Makefile	/^mlx_frag_shader.o: mlx_frag_shader.c.o$/;"	t
+mlx_frag_shader.s	MLX42/build/Makefile	/^mlx_frag_shader.s: mlx_frag_shader.c.s$/;"	t
 mlx_free_image	MLX42/src/mlx_exit.c	/^static void mlx_free_image(void* content)$/;"	f	typeref:typename:void	file:
 mlx_freen	MLX42/src/utils/mlx_utils.c	/^bool mlx_freen(int32_t count, ...)$/;"	f	typeref:typename:bool
 mlx_get_font	MLX42/src/font/mlx_font.c	/^const mlx_texture_t* mlx_get_font(void)$/;"	f	typeref:typename:const mlx_texture_t *
@@ -7123,6 +7427,12 @@ mlx_texture	MLX42/include/MLX42/MLX42.h	/^typedef struct mlx_texture$/;"	s
 mlx_texture_t	MLX42/include/MLX42/MLX42.h	/^}	mlx_texture_t;$/;"	t	typeref:struct:mlx_texture
 mlx_texture_to_image	MLX42/src/textures/mlx_texture.c	/^mlx_image_t* mlx_texture_to_image(mlx_t* mlx, mlx_texture_t* texture)$/;"	f	typeref:typename:mlx_image_t *
 mlx_update_matrix	MLX42/src/mlx_window.c	/^void mlx_update_matrix(const mlx_t* mlx)$/;"	f	typeref:typename:void
+mlx_vert_shader.c.i	MLX42/build/Makefile	/^mlx_vert_shader.c.i:$/;"	t
+mlx_vert_shader.c.o	MLX42/build/Makefile	/^mlx_vert_shader.c.o:$/;"	t
+mlx_vert_shader.c.s	MLX42/build/Makefile	/^mlx_vert_shader.c.s:$/;"	t
+mlx_vert_shader.i	MLX42/build/Makefile	/^mlx_vert_shader.i: mlx_vert_shader.c.i$/;"	t
+mlx_vert_shader.o	MLX42/build/Makefile	/^mlx_vert_shader.o: mlx_vert_shader.c.o$/;"	t
+mlx_vert_shader.s	MLX42/build/Makefile	/^mlx_vert_shader.s: mlx_vert_shader.c.s$/;"	t
 mlx_win_cursor_t	MLX42/include/MLX42/MLX42.h	/^typedef void mlx_win_cursor_t;$/;"	t	typeref:typename:void
 mode	MLX42/include/MLX42/MLX42.h	/^	char			mode;$/;"	m	struct:xpm	typeref:typename:char
 modifier	MLX42/include/MLX42/MLX42.h	/^	modifier_key_t	modifier;$/;"	m	struct:mlx_key_data	typeref:typename:modifier_key_t
@@ -7136,6 +7446,7 @@ mouse_mode	MLX42/include/MLX42/MLX42.h	/^typedef enum mouse_mode$/;"	g
 mouse_mode_t	MLX42/include/MLX42/MLX42.h	/^}	mouse_mode_t;$/;"	t	typeref:enum:mouse_mode
 name	MLX42/tests/WindowFixture.hpp	/^	static constexpr const char* name = "MLX42";$/;"	m	class:Window	typeref:typename:const char *
 next	MLX42/include/MLX42/MLX42_Int.h	/^	struct mlx_list*	next;$/;"	m	struct:mlx_list	typeref:struct:mlx_list *
+next	main2.c	/^	t_xyz		*next;$/;"	m	struct:s_xyz	typeref:typename:t_xyz *	file:
 nextfree	MLX42/lib/png/lodepng.c	/^  unsigned nextfree;$/;"	m	struct:BPMLists	typeref:typename:unsigned	file:
 nicematch	MLX42/include/lodepng/lodepng.h	/^  unsigned nicematch; \/*stop searching if >= this length found. Set to 258 for best compression/;"	m	struct:LodePNGCompressSettings	typeref:typename:unsigned
 num_exts_i	MLX42/lib/glad/glad.c	/^static int num_exts_i = 0;$/;"	v	typeref:typename:int	file:
@@ -7167,7 +7478,11 @@ pixels	MLX42/src/font/font.h	/^	char*			pixels;$/;"	m	struct:s_font	typeref:type
 postProcessScanlines	MLX42/lib/png/lodepng.c	/^static unsigned postProcessScanlines(unsigned char* out, unsigned char* in,$/;"	f	typeref:typename:unsigned	file:
 preProcessScanlines	MLX42/lib/png/lodepng.c	/^static unsigned preProcessScanlines(unsigned char** out, size_t* outsize, const unsigned char* i/;"	f	typeref:typename:unsigned	file:
 predefined_filters	MLX42/include/lodepng/lodepng.h	/^  const unsigned char* predefined_filters;$/;"	m	struct:LodePNGEncoderSettings	typeref:typename:const unsigned char *
+preinstall	MLX42/build/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	MLX42/build/Makefile	/^preinstall\/fast:$/;"	t
 prev	MLX42/include/MLX42/MLX42_Int.h	/^	struct mlx_list*	prev;$/;"	m	struct:mlx_list	typeref:struct:mlx_list *
+qnxnto	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	MLX42/build/CMakeFiles/3.27.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
 readBitFromReversedStream	MLX42/lib/png/lodepng.c	/^static unsigned char readBitFromReversedStream(size_t* bitpointer, const unsigned char* bitstrea/;"	f	typeref:typename:unsigned char	file:
 readBits	MLX42/lib/png/lodepng.c	/^static LODEPNG_INLINE unsigned readBits(LodePNGBitReader* reader, size_t nbits) {$/;"	f	typeref:typename:LODEPNG_INLINE unsigned	file:
 readBitsFromReversedStream	MLX42/lib/png/lodepng.c	/^static unsigned readBitsFromReversedStream(size_t* bitpointer, const unsigned char* bitstream, s/;"	f	typeref:typename:unsigned	file:
@@ -7185,6 +7500,8 @@ readChunk_tIME	MLX42/lib/png/lodepng.c	/^static unsigned readChunk_tIME(LodePNGI
 readChunk_tRNS	MLX42/lib/png/lodepng.c	/^static unsigned readChunk_tRNS(LodePNGColorMode* color, const unsigned char* data, size_t chunkL/;"	f	typeref:typename:unsigned	file:
 readChunk_zTXt	MLX42/lib/png/lodepng.c	/^static unsigned readChunk_zTXt(LodePNGInfo* info, const LodePNGDecoderSettings* decoder,$/;"	f	typeref:typename:unsigned	file:
 read_text_chunks	MLX42/include/lodepng/lodepng.h	/^  unsigned read_text_chunks; \/*if false but remember_unknown_chunks is true, they're stored in /;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
+rebuild_cache	MLX42/build/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	MLX42/build/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 remember_unknown_chunks	MLX42/include/lodepng/lodepng.h	/^  unsigned remember_unknown_chunks;$/;"	m	struct:LodePNGDecoderSettings	typeref:typename:unsigned
 removePaddingBits	MLX42/lib/png/lodepng.c	/^static void removePaddingBits(unsigned char* out, const unsigned char* in,$/;"	f	typeref:typename:void	file:
 render_queue	MLX42/include/MLX42/MLX42_Int.h	/^	mlx_list_t*		render_queue;$/;"	m	struct:mlx_ctx	typeref:typename:mlx_list_t *
@@ -7193,6 +7510,7 @@ reverseBits	MLX42/lib/png/lodepng.c	/^static unsigned reverseBits(unsigned bits,
 rgba16ToPixel	MLX42/lib/png/lodepng.c	/^static void rgba16ToPixel(unsigned char* out, size_t i,$/;"	f	typeref:typename:void	file:
 rgba8ToPixel	MLX42/lib/png/lodepng.c	/^static unsigned rgba8ToPixel(unsigned char* out, size_t i,$/;"	f	typeref:typename:unsigned	file:
 s_font	MLX42/src/font/font.h	/^static struct s_font$/;"	s
+s_xyz	main2.c	/^struct s_xyz$/;"	s	file:
 save_file	MLX42/lib/png/lodepng.c	/^unsigned save_file(const std::vector<unsigned char>& buffer, const std::string& filename) {$/;"	f	typeref:typename:unsigned
 sbit_a	MLX42/include/lodepng/lodepng.h	/^  unsigned sbit_a;       \/*alpha component of significant bits*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
 sbit_b	MLX42/include/lodepng/lodepng.h	/^  unsigned sbit_b;       \/*blue component of significant bits*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
@@ -7208,10 +7526,118 @@ size	MLX42/lib/png/lodepng.c	/^  size_t size; \/*size in number of unsigned long
 size	MLX42/lib/png/lodepng.c	/^  size_t size; \/*size of data in bytes*\/$/;"	m	struct:__anon24854bff0208	typeref:typename:size_t	file:
 size	MLX42/lib/png/lodepng.c	/^  size_t size; \/*used size*\/$/;"	m	struct:ucvector	typeref:typename:size_t	file:
 sort_queue	MLX42/src/mlx_init.c	/^bool sort_queue = false;$/;"	v	typeref:typename:bool
+src/font/mlx_font.c.i	MLX42/build/Makefile	/^src\/font\/mlx_font.c.i:$/;"	t
+src/font/mlx_font.c.o	MLX42/build/Makefile	/^src\/font\/mlx_font.c.o:$/;"	t
+src/font/mlx_font.c.s	MLX42/build/Makefile	/^src\/font\/mlx_font.c.s:$/;"	t
+src/font/mlx_font.i	MLX42/build/Makefile	/^src\/font\/mlx_font.i: src\/font\/mlx_font.c.i$/;"	t
+src/font/mlx_font.o	MLX42/build/Makefile	/^src\/font\/mlx_font.o: src\/font\/mlx_font.c.o$/;"	t
+src/font/mlx_font.s	MLX42/build/Makefile	/^src\/font\/mlx_font.s: src\/font\/mlx_font.c.s$/;"	t
+src/mlx_cursor.c.i	MLX42/build/Makefile	/^src\/mlx_cursor.c.i:$/;"	t
+src/mlx_cursor.c.o	MLX42/build/Makefile	/^src\/mlx_cursor.c.o:$/;"	t
+src/mlx_cursor.c.s	MLX42/build/Makefile	/^src\/mlx_cursor.c.s:$/;"	t
+src/mlx_cursor.i	MLX42/build/Makefile	/^src\/mlx_cursor.i: src\/mlx_cursor.c.i$/;"	t
+src/mlx_cursor.o	MLX42/build/Makefile	/^src\/mlx_cursor.o: src\/mlx_cursor.c.o$/;"	t
+src/mlx_cursor.s	MLX42/build/Makefile	/^src\/mlx_cursor.s: src\/mlx_cursor.c.s$/;"	t
+src/mlx_exit.c.i	MLX42/build/Makefile	/^src\/mlx_exit.c.i:$/;"	t
+src/mlx_exit.c.o	MLX42/build/Makefile	/^src\/mlx_exit.c.o:$/;"	t
+src/mlx_exit.c.s	MLX42/build/Makefile	/^src\/mlx_exit.c.s:$/;"	t
+src/mlx_exit.i	MLX42/build/Makefile	/^src\/mlx_exit.i: src\/mlx_exit.c.i$/;"	t
+src/mlx_exit.o	MLX42/build/Makefile	/^src\/mlx_exit.o: src\/mlx_exit.c.o$/;"	t
+src/mlx_exit.s	MLX42/build/Makefile	/^src\/mlx_exit.s: src\/mlx_exit.c.s$/;"	t
+src/mlx_images.c.i	MLX42/build/Makefile	/^src\/mlx_images.c.i:$/;"	t
+src/mlx_images.c.o	MLX42/build/Makefile	/^src\/mlx_images.c.o:$/;"	t
+src/mlx_images.c.s	MLX42/build/Makefile	/^src\/mlx_images.c.s:$/;"	t
+src/mlx_images.i	MLX42/build/Makefile	/^src\/mlx_images.i: src\/mlx_images.c.i$/;"	t
+src/mlx_images.o	MLX42/build/Makefile	/^src\/mlx_images.o: src\/mlx_images.c.o$/;"	t
+src/mlx_images.s	MLX42/build/Makefile	/^src\/mlx_images.s: src\/mlx_images.c.s$/;"	t
+src/mlx_init.c.i	MLX42/build/Makefile	/^src\/mlx_init.c.i:$/;"	t
+src/mlx_init.c.o	MLX42/build/Makefile	/^src\/mlx_init.c.o:$/;"	t
+src/mlx_init.c.s	MLX42/build/Makefile	/^src\/mlx_init.c.s:$/;"	t
+src/mlx_init.i	MLX42/build/Makefile	/^src\/mlx_init.i: src\/mlx_init.c.i$/;"	t
+src/mlx_init.o	MLX42/build/Makefile	/^src\/mlx_init.o: src\/mlx_init.c.o$/;"	t
+src/mlx_init.s	MLX42/build/Makefile	/^src\/mlx_init.s: src\/mlx_init.c.s$/;"	t
+src/mlx_keys.c.i	MLX42/build/Makefile	/^src\/mlx_keys.c.i:$/;"	t
+src/mlx_keys.c.o	MLX42/build/Makefile	/^src\/mlx_keys.c.o:$/;"	t
+src/mlx_keys.c.s	MLX42/build/Makefile	/^src\/mlx_keys.c.s:$/;"	t
+src/mlx_keys.i	MLX42/build/Makefile	/^src\/mlx_keys.i: src\/mlx_keys.c.i$/;"	t
+src/mlx_keys.o	MLX42/build/Makefile	/^src\/mlx_keys.o: src\/mlx_keys.c.o$/;"	t
+src/mlx_keys.s	MLX42/build/Makefile	/^src\/mlx_keys.s: src\/mlx_keys.c.s$/;"	t
+src/mlx_loop.c.i	MLX42/build/Makefile	/^src\/mlx_loop.c.i:$/;"	t
+src/mlx_loop.c.o	MLX42/build/Makefile	/^src\/mlx_loop.c.o:$/;"	t
+src/mlx_loop.c.s	MLX42/build/Makefile	/^src\/mlx_loop.c.s:$/;"	t
+src/mlx_loop.i	MLX42/build/Makefile	/^src\/mlx_loop.i: src\/mlx_loop.c.i$/;"	t
+src/mlx_loop.o	MLX42/build/Makefile	/^src\/mlx_loop.o: src\/mlx_loop.c.o$/;"	t
+src/mlx_loop.s	MLX42/build/Makefile	/^src\/mlx_loop.s: src\/mlx_loop.c.s$/;"	t
+src/mlx_monitor.c.i	MLX42/build/Makefile	/^src\/mlx_monitor.c.i:$/;"	t
+src/mlx_monitor.c.o	MLX42/build/Makefile	/^src\/mlx_monitor.c.o:$/;"	t
+src/mlx_monitor.c.s	MLX42/build/Makefile	/^src\/mlx_monitor.c.s:$/;"	t
+src/mlx_monitor.i	MLX42/build/Makefile	/^src\/mlx_monitor.i: src\/mlx_monitor.c.i$/;"	t
+src/mlx_monitor.o	MLX42/build/Makefile	/^src\/mlx_monitor.o: src\/mlx_monitor.c.o$/;"	t
+src/mlx_monitor.s	MLX42/build/Makefile	/^src\/mlx_monitor.s: src\/mlx_monitor.c.s$/;"	t
+src/mlx_mouse.c.i	MLX42/build/Makefile	/^src\/mlx_mouse.c.i:$/;"	t
+src/mlx_mouse.c.o	MLX42/build/Makefile	/^src\/mlx_mouse.c.o:$/;"	t
+src/mlx_mouse.c.s	MLX42/build/Makefile	/^src\/mlx_mouse.c.s:$/;"	t
+src/mlx_mouse.i	MLX42/build/Makefile	/^src\/mlx_mouse.i: src\/mlx_mouse.c.i$/;"	t
+src/mlx_mouse.o	MLX42/build/Makefile	/^src\/mlx_mouse.o: src\/mlx_mouse.c.o$/;"	t
+src/mlx_mouse.s	MLX42/build/Makefile	/^src\/mlx_mouse.s: src\/mlx_mouse.c.s$/;"	t
+src/mlx_put_pixel.c.i	MLX42/build/Makefile	/^src\/mlx_put_pixel.c.i:$/;"	t
+src/mlx_put_pixel.c.o	MLX42/build/Makefile	/^src\/mlx_put_pixel.c.o:$/;"	t
+src/mlx_put_pixel.c.s	MLX42/build/Makefile	/^src\/mlx_put_pixel.c.s:$/;"	t
+src/mlx_put_pixel.i	MLX42/build/Makefile	/^src\/mlx_put_pixel.i: src\/mlx_put_pixel.c.i$/;"	t
+src/mlx_put_pixel.o	MLX42/build/Makefile	/^src\/mlx_put_pixel.o: src\/mlx_put_pixel.c.o$/;"	t
+src/mlx_put_pixel.s	MLX42/build/Makefile	/^src\/mlx_put_pixel.s: src\/mlx_put_pixel.c.s$/;"	t
+src/mlx_window.c.i	MLX42/build/Makefile	/^src\/mlx_window.c.i:$/;"	t
+src/mlx_window.c.o	MLX42/build/Makefile	/^src\/mlx_window.c.o:$/;"	t
+src/mlx_window.c.s	MLX42/build/Makefile	/^src\/mlx_window.c.s:$/;"	t
+src/mlx_window.i	MLX42/build/Makefile	/^src\/mlx_window.i: src\/mlx_window.c.i$/;"	t
+src/mlx_window.o	MLX42/build/Makefile	/^src\/mlx_window.o: src\/mlx_window.c.o$/;"	t
+src/mlx_window.s	MLX42/build/Makefile	/^src\/mlx_window.s: src\/mlx_window.c.s$/;"	t
+src/textures/mlx_png.c.i	MLX42/build/Makefile	/^src\/textures\/mlx_png.c.i:$/;"	t
+src/textures/mlx_png.c.o	MLX42/build/Makefile	/^src\/textures\/mlx_png.c.o:$/;"	t
+src/textures/mlx_png.c.s	MLX42/build/Makefile	/^src\/textures\/mlx_png.c.s:$/;"	t
+src/textures/mlx_png.i	MLX42/build/Makefile	/^src\/textures\/mlx_png.i: src\/textures\/mlx_png.c.i$/;"	t
+src/textures/mlx_png.o	MLX42/build/Makefile	/^src\/textures\/mlx_png.o: src\/textures\/mlx_png.c.o$/;"	t
+src/textures/mlx_png.s	MLX42/build/Makefile	/^src\/textures\/mlx_png.s: src\/textures\/mlx_png.c.s$/;"	t
+src/textures/mlx_texture.c.i	MLX42/build/Makefile	/^src\/textures\/mlx_texture.c.i:$/;"	t
+src/textures/mlx_texture.c.o	MLX42/build/Makefile	/^src\/textures\/mlx_texture.c.o:$/;"	t
+src/textures/mlx_texture.c.s	MLX42/build/Makefile	/^src\/textures\/mlx_texture.c.s:$/;"	t
+src/textures/mlx_texture.i	MLX42/build/Makefile	/^src\/textures\/mlx_texture.i: src\/textures\/mlx_texture.c.i$/;"	t
+src/textures/mlx_texture.o	MLX42/build/Makefile	/^src\/textures\/mlx_texture.o: src\/textures\/mlx_texture.c.o$/;"	t
+src/textures/mlx_texture.s	MLX42/build/Makefile	/^src\/textures\/mlx_texture.s: src\/textures\/mlx_texture.c.s$/;"	t
+src/textures/mlx_xpm42.c.i	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.c.i:$/;"	t
+src/textures/mlx_xpm42.c.o	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.c.o:$/;"	t
+src/textures/mlx_xpm42.c.s	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.c.s:$/;"	t
+src/textures/mlx_xpm42.i	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.i: src\/textures\/mlx_xpm42.c.i$/;"	t
+src/textures/mlx_xpm42.o	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.o: src\/textures\/mlx_xpm42.c.o$/;"	t
+src/textures/mlx_xpm42.s	MLX42/build/Makefile	/^src\/textures\/mlx_xpm42.s: src\/textures\/mlx_xpm42.c.s$/;"	t
+src/utils/mlx_compare.c.i	MLX42/build/Makefile	/^src\/utils\/mlx_compare.c.i:$/;"	t
+src/utils/mlx_compare.c.o	MLX42/build/Makefile	/^src\/utils\/mlx_compare.c.o:$/;"	t
+src/utils/mlx_compare.c.s	MLX42/build/Makefile	/^src\/utils\/mlx_compare.c.s:$/;"	t
+src/utils/mlx_compare.i	MLX42/build/Makefile	/^src\/utils\/mlx_compare.i: src\/utils\/mlx_compare.c.i$/;"	t
+src/utils/mlx_compare.o	MLX42/build/Makefile	/^src\/utils\/mlx_compare.o: src\/utils\/mlx_compare.c.o$/;"	t
+src/utils/mlx_compare.s	MLX42/build/Makefile	/^src\/utils\/mlx_compare.s: src\/utils\/mlx_compare.c.s$/;"	t
+src/utils/mlx_error.c.i	MLX42/build/Makefile	/^src\/utils\/mlx_error.c.i:$/;"	t
+src/utils/mlx_error.c.o	MLX42/build/Makefile	/^src\/utils\/mlx_error.c.o:$/;"	t
+src/utils/mlx_error.c.s	MLX42/build/Makefile	/^src\/utils\/mlx_error.c.s:$/;"	t
+src/utils/mlx_error.i	MLX42/build/Makefile	/^src\/utils\/mlx_error.i: src\/utils\/mlx_error.c.i$/;"	t
+src/utils/mlx_error.o	MLX42/build/Makefile	/^src\/utils\/mlx_error.o: src\/utils\/mlx_error.c.o$/;"	t
+src/utils/mlx_error.s	MLX42/build/Makefile	/^src\/utils\/mlx_error.s: src\/utils\/mlx_error.c.s$/;"	t
+src/utils/mlx_list.c.i	MLX42/build/Makefile	/^src\/utils\/mlx_list.c.i:$/;"	t
+src/utils/mlx_list.c.o	MLX42/build/Makefile	/^src\/utils\/mlx_list.c.o:$/;"	t
+src/utils/mlx_list.c.s	MLX42/build/Makefile	/^src\/utils\/mlx_list.c.s:$/;"	t
+src/utils/mlx_list.i	MLX42/build/Makefile	/^src\/utils\/mlx_list.i: src\/utils\/mlx_list.c.i$/;"	t
+src/utils/mlx_list.o	MLX42/build/Makefile	/^src\/utils\/mlx_list.o: src\/utils\/mlx_list.c.o$/;"	t
+src/utils/mlx_list.s	MLX42/build/Makefile	/^src\/utils\/mlx_list.s: src\/utils\/mlx_list.c.s$/;"	t
+src/utils/mlx_utils.c.i	MLX42/build/Makefile	/^src\/utils\/mlx_utils.c.i:$/;"	t
+src/utils/mlx_utils.c.o	MLX42/build/Makefile	/^src\/utils\/mlx_utils.c.o:$/;"	t
+src/utils/mlx_utils.c.s	MLX42/build/Makefile	/^src\/utils\/mlx_utils.c.s:$/;"	t
+src/utils/mlx_utils.i	MLX42/build/Makefile	/^src\/utils\/mlx_utils.i: src\/utils\/mlx_utils.c.i$/;"	t
+src/utils/mlx_utils.o	MLX42/build/Makefile	/^src\/utils\/mlx_utils.o: src\/utils\/mlx_utils.c.o$/;"	t
+src/utils/mlx_utils.s	MLX42/build/Makefile	/^src\/utils\/mlx_utils.s: src\/utils\/mlx_utils.c.s$/;"	t
 srgb_defined	MLX42/include/lodepng/lodepng.h	/^  unsigned srgb_defined; \/* Whether an sRGB chunk is present (0 = not present, 1 = present). *\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
 srgb_intent	MLX42/include/lodepng/lodepng.h	/^  unsigned srgb_intent;  \/* Rendering intent: 0=perceptual, 1=rel. colorimetric, 2=saturation, /;"	m	struct:LodePNGInfo	typeref:typename:unsigned
 string_cleanup	MLX42/lib/png/lodepng.c	/^static void string_cleanup(char** out) {$/;"	f	typeref:typename:void	file:
-struct_ponteiros	main2.c	/^typedef struct struct_ponteiros {$/;"	s	file:
+t_xyz	main2.c	/^typedef struct s_xyz t_xyz;$/;"	t	typeref:struct:s_xyz	file:
 table_len	MLX42/lib/png/lodepng.c	/^  unsigned char* table_len; \/*length of symbol from lookup table, or max length if secondary lo/;"	m	struct:HuffmanTree	typeref:typename:unsigned char *	file:
 table_value	MLX42/lib/png/lodepng.c	/^  unsigned short* table_value; \/*value of symbol from lookup table, or pointer to secondary tab/;"	m	struct:HuffmanTree	typeref:typename:unsigned short *	file:
 tail	MLX42/lib/png/lodepng.c	/^  struct BPMNode* tail; \/*the next nodes in this chain (null if last)*\/$/;"	m	struct:BPMNode	typeref:struct:BPMNode *	file:
@@ -7224,7 +7650,6 @@ texture	MLX42/include/MLX42/MLX42.h	/^	mlx_texture_t	texture;$/;"	m	struct:xpm	t
 texture	MLX42/include/MLX42/MLX42_Int.h	/^	GLuint	texture;$/;"	m	struct:mlx_image_ctx	typeref:typename:GLuint
 time	MLX42/include/lodepng/lodepng.h	/^  LodePNGTime time;$/;"	m	struct:LodePNGInfo	typeref:typename:LodePNGTime
 time_defined	MLX42/include/lodepng/lodepng.h	/^  unsigned time_defined; \/*set to 1 to make the encoder generate a tIME chunk*\/$/;"	m	struct:LodePNGInfo	typeref:typename:unsigned
-tipo_ponteiros	main2.c	/^}	tipo_ponteiros;$/;"	t	typeref:struct:struct_ponteiros	file:
 u	MLX42/include/MLX42/MLX42_Int.h	/^	float	u;$/;"	m	struct:vertex	typeref:typename:float
 ucvector	MLX42/lib/png/lodepng.c	/^typedef struct ucvector {$/;"	s	file:
 ucvector	MLX42/lib/png/lodepng.c	/^} ucvector;$/;"	t	typeref:struct:ucvector	file:
@@ -7249,8 +7674,10 @@ v	MLX42/include/MLX42/MLX42_Int.h	/^	float	v;$/;"	m	struct:vertex	typeref:typena
 val	MLX42/lib/png/lodepng.c	/^  int* val; \/*circular pos to hash value*\/$/;"	m	struct:Hash	typeref:typename:int *	file:
 vao	MLX42/include/MLX42/MLX42_Int.h	/^	GLuint			vao;$/;"	m	struct:mlx_ctx	typeref:typename:GLuint
 vbo	MLX42/include/MLX42/MLX42_Int.h	/^	GLuint			vbo;$/;"	m	struct:mlx_ctx	typeref:typename:GLuint
+vert_shader	MLX42/build/mlx_vert_shader.c	/^const char* vert_shader = "#version 330 core\\n"$/;"	v	typeref:typename:const char *
 vertex	MLX42/include/MLX42/MLX42_Int.h	/^typedef struct vertex$/;"	s
 vertex_t	MLX42/include/MLX42/MLX42_Int.h	/^}	vertex_t;$/;"	t	typeref:struct:vertex
+volatile	MLX42/build/CMakeFiles/3.27.5/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
 weight	MLX42/lib/png/lodepng.c	/^  int weight; \/*the sum of all weights in this chain*\/$/;"	m	struct:BPMNode	typeref:typename:int	file:
 width	MLX42/include/MLX42/MLX42.h	/^	const uint32_t	width;$/;"	m	struct:mlx_image	typeref:typename:const uint32_t
 width	MLX42/include/MLX42/MLX42.h	/^	int32_t		width;$/;"	m	struct:mlx	typeref:typename:int32_t
@@ -7265,13 +7692,16 @@ writeLZ77data	MLX42/lib/png/lodepng.c	/^static void writeLZ77data(LodePNGBitWrit
 writeSignature	MLX42/lib/png/lodepng.c	/^static unsigned writeSignature(ucvector* out) {$/;"	f	typeref:typename:unsigned	file:
 x	MLX42/include/MLX42/MLX42.h	/^	int32_t	x;$/;"	m	struct:mlx_instance	typeref:typename:int32_t
 x	MLX42/include/MLX42/MLX42_Int.h	/^	float	x;$/;"	m	struct:vertex	typeref:typename:float
+x	main2.c	/^	uint32_t	x;$/;"	m	struct:s_xyz	typeref:typename:uint32_t	file:
 xpm	MLX42/include/MLX42/MLX42.h	/^typedef struct xpm$/;"	s
 xpm_t	MLX42/include/MLX42/MLX42.h	/^}	xpm_t;$/;"	t	typeref:struct:xpm
 y	MLX42/include/MLX42/MLX42.h	/^	int32_t	y;$/;"	m	struct:mlx_instance	typeref:typename:int32_t
 y	MLX42/include/MLX42/MLX42_Int.h	/^	float	y;$/;"	m	struct:vertex	typeref:typename:float
+y	main2.c	/^	uint32_t	y;$/;"	m	struct:s_xyz	typeref:typename:uint32_t	file:
 year	MLX42/include/lodepng/lodepng.h	/^  unsigned year;    \/*2 bytes used (0-65535)*\/$/;"	m	struct:LodePNGTime	typeref:typename:unsigned
 z	MLX42/include/MLX42/MLX42.h	/^	int32_t	z;$/;"	m	struct:mlx_instance	typeref:typename:int32_t
 z	MLX42/include/MLX42/MLX42_Int.h	/^	float	z;$/;"	m	struct:vertex	typeref:typename:float
+z	main2.c	/^	uint32_t	z;$/;"	m	struct:s_xyz	typeref:typename:uint32_t	file:
 zdepth	MLX42/include/MLX42/MLX42_Int.h	/^	int32_t			zdepth;$/;"	m	struct:mlx_ctx	typeref:typename:int32_t
 zeros	MLX42/lib/png/lodepng.c	/^  unsigned short* zeros; \/*length of zeros streak, used as a second hash chain*\/$/;"	m	struct:Hash	typeref:typename:unsigned short *	file:
 zlib_compress	MLX42/lib/png/lodepng.c	/^static unsigned zlib_compress(unsigned char** out, size_t* outsize, const unsigned char* in,$/;"	f	typeref:typename:unsigned	file:

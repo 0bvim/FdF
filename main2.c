@@ -3,7 +3,7 @@
 #define ESC 65307
 
 static void	ft_hook(void *param);
-void	closew(mlx_key_data_t key, void *param);
+void	key_press(mlx_key_data_t key, void *param);
 void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color);
 
 int	main(void)
@@ -15,19 +15,20 @@ int	main(void)
 	// Set responsive
 	mlx_set_setting(MLX_STRETCH_IMAGE, true);
 	// Create a new MLX windows
-	mlx_t	*mlx = mlx_init(800, 600, "FckDerFkr", true);
+	mlx_t	*mlx = mlx_init(WIDTH, HEIGHT, "FckDerFkr", true);
 
 	// Get the window image
 	mlx_image_t	*image = mlx_new_image(mlx, WIDTH, HEIGHT);
-	
+	//mlx_texture_t	*bg = mlx_load_png("big.png");
 	// Set the line color, commented here, using in function ft_line.
 	//mlx_put_pixel (image, 10, 10, color);
 	
 	// Display the image
-	mlx_image_to_window(mlx, image, 10, 10);
+	//image = mlx_texture_to_image(mlx, bg);
+	mlx_image_to_window(mlx, image, 400, 300);
 
 	// Destroy the window and wait for a key press
-	mlx_key_hook(mlx, closew, mlx);
+	mlx_key_hook(mlx, key_press, mlx);
 
 	// loop to print line in the window
 	ft_line(image, mlx, color);	
@@ -38,7 +39,7 @@ int	main(void)
 
 //static void	ft_hook(void *param) // finish this function
 
-void	closew(mlx_key_data_t key, void *param)
+void	key_press(mlx_key_data_t key, void *param)
 {
 	mlx_t	*mlx = param;
 
@@ -54,37 +55,50 @@ struct s_xyz
 	uint32_t	x;
 	uint32_t	y;
 	uint32_t	z;
-	t_xyz		*next;
 };
 
 void	ft_line(mlx_image_t *image, mlx_t *param, uint32_t color)
 {
-	t_xyz	map;
+	t_xyz	start;
+	t_xyz	end;
 
-	map.x = 0;
-	map.y = 0;
-	map.z = 0;
-	map.next = NULL;
-	for(map.x = 0; map.x < 50; map.x++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	start.x = 0;
+	start.y = 0;
+	start.z = 0;
+	end.x = 150;
+	end.y = 150;
+	end.z = 0;
+	
+	uint32_t dx = end.x - start.x;
+	uint32_t dy = end.y - start.y;
 
-	map.y = 50;
-	for( map.x = 0; map.x < 50; map.x++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+	while (dx)
+		mlx_put_pixel(image, dx--, dy, color);
+	while (dy)
+		mlx_put_pixel(image, dx, dy--, color);
 
-	map.x = 0;
-	for( map.y = 0; map.y < 50; map.y++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
-
-	map.x = 50;
-	for( map.y = 0; map.y < 50; map.y++)
-	{
-		mlx_put_pixel(image, map.x, map.y, color);
-	}
+//	start.y = 0;
+//	for( start.x = 0; start.x < 90; start.x++)
+//	{
+//		mlx_put_pixel(image, start.x, start.y, color);
+//		start.y++;
+//	}
+//
+//	start.y = 50;
+//	for( start.x = 0; start.x < 50; start.x++)
+//	{
+//		mlx_put_pixel(image, start.x, start.y, color);
+//	}
+//
+//	start.x = 0;
+//	for( start.y = 0; start.y < 50; start.y++)
+//	{
+//		mlx_put_pixel(image, start.x, start.y, color);
+//	}
+//
+//	start.x = 50;
+//	for( start.y = 0; start.y < 50; start.y++)
+//	{
+//		mlx_put_pixel(image, start.x, start.y, color);
+//	}
 }

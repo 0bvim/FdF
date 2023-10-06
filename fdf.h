@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:38:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/01 14:41:46 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/05 22:59:43 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,38 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include <math.h>
 
 # define WIDTH 800
 # define HEIGHT 600
 
-#define ESC 65307
 
-typedef struct s_trid t_trid;
-struct s_trid
+typedef struct s_point t_point;
+struct s_point
 {
-	uint32_t	x;
-	uint32_t	y;
-	uint32_t	z;
+	float	x;
+	float	y;
+	float	z;
 };
 
 #endif
+
+typedef struct s_drawu t_drawu;
+struct s_drawu
+{
+	float		x0;
+	float		x1;
+	float		y0;
+	float		y1;
+	float		wid;
+	float		height;
+	uint32_t	color;
+	unsigned char	*buffer;
+};
+
+typedef struct s_fdf t_fdf;
+struct s_fdf
+{
+	mlx_t		*mlx;
+	mlx_image_t	*image;
+};

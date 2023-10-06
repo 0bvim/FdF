@@ -1,61 +1,93 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 03:37:50 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/09/25 19:08:12 by vde-frei         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "fdf.h"
 
-# define WIDTH 800
-# define HEIGHT 600
+//static void	ft_hook(void *param);
+void	key_press(mlx_key_data_t key, void *param);
+void	ft_line(t_fdf fdf, t_drawu *pixel, t_point start, t_point end);
 
-/* exit the program as failure.*/
-static void	ft_error(void)
+int	main(void)
 {
-	fprintf(stderr, "%s", mlx_strerror(mlx_errno));
-	exit (EXIT_FAILURE);
-}
+	t_drawu	*pixel;
+	t_fdf	fdf;
+	t_point	one;
+	t_point	two;
+	
+	one.x = 0;
+	one.y = 0;
+	two.x = 85;
+	two.y = 85;
+	one.z = 0;
+	two.z = 50;
+	pixel = malloc(sizeof(t_drawu));
+	pixel->color = 0x0F44F5FF;
+	pixel->wid = 500;
+	pixel->height = 400;
 
-/* print the window width and height. */
-static void	ft_hook(void *param)
-{
-	const mlx_t	*mlx = param;
-	printf("WIDTH: %d | HEIGHT: %d\n", mlx->width, mlx->height);
-}
-
-int32_t	main(void)
-{
+	// Open window maximized
 	mlx_set_setting(MLX_MAXIMIZED, false);
-	mlx_t	*mlx = mlx_init(WIDTH, HEIGHT, "FdF", true);
-	if (!mlx)
-		ft_error();
-	mlx_image_t	*img = mlx_new_image(mlx, WIDTH, HEIGHT);
-	if (!img || (mlx_image_to_window(mlx, img, 0, 0) < 0))
-		ft_error();
-	uint32_t j = 200;
-	for(int i = 250; i < 450; i++)
-	{
-		mlx_put_pixel(img, i, j, 0xFF0000FF);
-		if (i % 2 == 0)
-			j += 5;
-	}
-	j = 430;
-	for(int i = 100; i < 300; i++)
-		mlx_put_pixel(img, i, j, 0xFF0000FF);
-	
-	j = 630;
-	for(int i = 400; i < 700; i++)
-		mlx_put_pixel(img, i, j, 0xFF0000FF);
-	
-	//mlx_loop_hook(mlx, ft_hook, mlx);
-	mlx_loop(mlx);
-	mlx_terminate(mlx);
-	return (0);
+	// Set responsive
+	mlx_set_setting(MLX_STRETCH_IMAGE, true);
+	// Create a new MLX windows
+	fdf.mlx = mlx_init(WIDTH, HEIGHT, "FckDerFkr", true);
+	// Get the window image
+	fdf.image = mlx_new_image(fdf.mlx, WIDTH, HEIGHT);
+
+	mlx_image_to_window(fdf.mlx, fdf.image, pixel->wid, pixel->height);
+
+	// Destroy the window and wait for a key press
+	mlx_key_hook(fdf.mlx, key_press, fdf.mlx);
+
+	// loop to print line in the window
+	ft_line(fdf, pixel, one, two);
+	//mlx_loop_hook(mlx, ft_hook, image);
+	mlx_loop(fdf.mlx);
+	//mlx_terminate(mlx);
 }
 
+//static void	ft_hook(void *param) // finish this function
+
+void	key_press(mlx_key_data_t key, void *param)
+{
+	mlx_t	*mlx = param;
+
+	if (key.key == MLX_KEY_ESCAPE)
+	{
+		mlx_close_window(mlx);
+	}
+}
+
+void	ft_line(t_fdf fdf, t_drawu *pixel, t_point start, t_point end)
+{
+	float	slopeX;
+	float	slopeY;
+	float	distance;
+	float	intensity;
+	int	x;
+	int	y;
+	int	z;
+	t_point	*temp;
+	temp = &start;
+	
+	z = start.z;
+	// calc the slope of the line
+	// iterate over all pixels on the line
+	while (temp->x != end.x || temp->y != end.y)
+	{
+		mlx_put_pixel(fdf.image, x, y, pixel->color);
+		if (!end.z)
+			slopeX = (end.x - start.x);
+		else
+			slopeX = (end.x - start.x) / (end.z - start.z);
+		if (!end.z)
+			slopeY = (end.y - start.y);
+		else
+		slopeY = (end.y - start.y) / (end.z - start.z);
+		x = (int)(start.x + slopeX * (z - start.z));
+		y = (int)(start.y + slopeY * (z - start.z));
+		distance = fabs(y - (start.y + slopeY * (z - start.z)));
+		intensity = 0.5 - fabs(distance);
+		start.x++;
+		mlx_put_pixel(fdf.image, x, y, pixel->color);
+		start.y++;
+
+	}
+}

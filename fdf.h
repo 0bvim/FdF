@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:38:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/05 22:59:43 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/06 07:28:24 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FDF_H
 
 #include "MLX42/include/MLX42/MLX42.h"
+#include "lib/libft/libft.h"
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>

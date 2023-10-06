@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 07:00:31 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/06 07:53:07 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/06 08:45:14 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,9 +65,10 @@ all : $(NAME)
 obj: 
 	@mkdir -p $(OBJ_DIR)
 
+.SILENT:
 $(MLX): 
-	@(cd MLX42 && cmake -B build)
-	@(cd MLX42 && cmake --build build -j4)
+	@cd MLX42 && cmake -B build
+	@cd MLX42 && cmake --build build -j4
 
 obj/%.o: %.c
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@

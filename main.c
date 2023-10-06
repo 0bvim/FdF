@@ -11,12 +11,12 @@ int	main(void)
 	t_point	one;
 	t_point	two;
 	
-	one.x = 0;
-	one.y = 0;
-	two.x = 85;
-	two.y = 85;
+	one.x = 100;
+	one.y =	100;
+	two.x = 300;
+	two.y = 300;
 	one.z = 0;
-	two.z = 50;
+	two.z = 10;
 	pixel = malloc(sizeof(t_drawu));
 	pixel->color = 0x0F44F5FF;
 	pixel->wid = 500;
@@ -68,8 +68,6 @@ void	ft_line(t_fdf fdf, t_drawu *pixel, t_point start, t_point end)
 	temp = &start;
 	
 	z = start.z;
-	// calc the slope of the line
-	// iterate over all pixels on the line
 	while (temp->x != end.x || temp->y != end.y)
 	{
 		mlx_put_pixel(fdf.image, x, y, pixel->color);

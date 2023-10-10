@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:38:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/06 07:28:24 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/10 09:25:09 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 #include <stdio.h>
 #include <math.h>
 
-# define WIDTH 800
-# define HEIGHT 600
+# define WIDTH 1900
+# define HEIGHT 1200
 
 
 typedef struct s_point t_point;

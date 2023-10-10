@@ -11,25 +11,25 @@ int	main(void)
 	t_point	one;
 	t_point	two;
 	
-	one.x = 100;
-	one.y =	100;
+	one.x = 0;
+	one.y =	0;
 	two.x = 300;
 	two.y = 300;
 	one.z = 0;
 	two.z = 10;
 	pixel = malloc(sizeof(t_drawu));
-	pixel->color = 0x0F44F5FF;
-	pixel->wid = 500;
-	pixel->height = 400;
+	pixel->color = 0xFF44F5FF;
+	pixel->wid = 700;
+	pixel->height = 500;
 
 	// Open window maximized
-	mlx_set_setting(MLX_MAXIMIZED, false);
+	mlx_set_setting(MLX_MAXIMIZED, true);
 	// Set responsive
-	mlx_set_setting(MLX_STRETCH_IMAGE, true);
+	mlx_set_setting(MLX_STRETCH_IMAGE, false);
 	// Create a new MLX windows
 	fdf.mlx = mlx_init(WIDTH, HEIGHT, "FckDerFkr", true);
 	// Get the window image
-	fdf.image = mlx_new_image(fdf.mlx, WIDTH, HEIGHT);
+	fdf.image = mlx_new_image(fdf.mlx, 512, 512);
 
 	mlx_image_to_window(fdf.mlx, fdf.image, pixel->wid, pixel->height);
 

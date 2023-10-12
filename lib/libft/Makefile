@@ -6,15 +6,13 @@
 #    By: vde-frei <vde-freistudent.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:05:38 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/06 06:58:51 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/12 06:42:23 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #******************************************************************************#
 #				CONFIGURATION				       #
 #******************************************************************************#
-multi:
-	@$(MAKE) -j8 all --no-print-directory
 
 NAME = libft.a
 
@@ -69,6 +67,7 @@ CFILES = ft_atoi.c \
     ft_putchar_fd.c \
     ft_putstr_fd.c \
     ft_putendl_fd.c \
+    ft_putendl.c \
     ft_putnbr_fd.c \
     ft_itoa.c \
     ft_substr.c \

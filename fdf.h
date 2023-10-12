@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:38:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 07:44:34 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/12 11:25:55 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <fcntl.h>
 # include <stdio.h>
 # include <math.h>
+# define I32_MAX 0x7FFFFFFF
 # define WIDTH 1900
 # define HEIGHT 1080
 # define ROT_SP 0.05

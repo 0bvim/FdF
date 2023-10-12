@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 06:48:17 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 08:29:10 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/12 11:06:41 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,9 @@ static	int32_t	ft_get_width(char *line);
 t_coords	*ft_parse_map(t_fdf *data, char *map_path)
 {
 	int32_t		fd;
-	int32_t		bread;
 	char		*readstr;
 	char		*line;
 
-	bread = 1;
 	readstr = NULL;
 	data->map_height = 0;
 	fd = open(map_path, O_RDONLY);

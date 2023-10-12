@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 06:48:17 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 07:34:45 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/12 08:29:10 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ t_coords	*ft_parse_map(t_fdf *data, char *map_path)
 			data->map_height++;
 		}
 		else
-			break;
+			break ;
 		free(line);
 	}
 	close(fd);
@@ -79,7 +79,7 @@ static	int32_t	ft_count(char *line)
 	{
 		while (ft_isspace(*line) && *line)
 			line++;
-		while (ft_isdigit(*line) || *line == '-')
+		if (ft_isdigit(*line) || *line == '-')
 			count++;
 		while (!ft_isspace(*line) && *line)
 			line++;
@@ -101,7 +101,7 @@ static	int32_t	ft_get_width(char *line)
 		while (*line != ' ' && *line)
 		{
 			if (*line == '\n')
-				break;
+				break ;
 			line++;
 		}
 	}

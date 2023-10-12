@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 03:38:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 05:27:23 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/12 07:44:34 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,5 +125,5 @@ t_coords	*ft_parse_map(t_fdf *data, char *map_path);
  *
  * @param s The error message.
  */
-void		ft_error(const char *s);
+void		ft_error(char *s);
 #endif

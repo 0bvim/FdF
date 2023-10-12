@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 07:00:31 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/06 08:45:14 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/12 08:11:11 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,12 +34,12 @@ WHITE  		 = \033[0;37m
 RESET  		 = \033[0m
 
 MFLAGS = -ldl -lglfw -pthread -lm -g3
-CFLAGS = -Wall -Wextra -Werror -g3 -O3
+CFLAGS = -Wall -Wextra -Werror -g3
 
 #******************************************************************************#
 #				     FILES				       #
 #******************************************************************************#
-CFILES = main.c
+CFILES = main.c ft_error.c ft_parse_map.c
 
 OBJ_DIR = ./obj/
 

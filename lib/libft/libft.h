@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 16:27:56 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 07:05:24 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/12 08:02:28 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,9 @@ struct	s_list
 	void	*content;
 	t_list	*next;
 };
+
+/** GNL */
+char	*get_next_line(int fd);
 
 /* Bonus Functions */
 
@@ -75,5 +78,6 @@ void	ft_putchar_fd(char c, int fd);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
+int32_t	ft_isspace(int32_t c);
 
 #endif

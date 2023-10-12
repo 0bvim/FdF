@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-freistudent.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 12:05:38 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/12 06:42:23 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/12 07:01:04 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,7 +86,8 @@ CFILES = ft_atoi.c \
     ft_lstiter.c \
     ft_lstmap.c \
     get_next_line.c \
-    get_next_line_utils.c
+    get_next_line_utils.c \
+	ft_str_append.c
 
 OBJS = $(CFILES:%.c=%.o)
 

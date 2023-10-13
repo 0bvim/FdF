@@ -6,12 +6,19 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 06:17:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 11:08:47 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/13 07:36:56 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
+t_IVec2	ft_point(int32_t x, int32_t y)
+{
+	t_IVec2	point;
+	point.x = x;
+	point.y = y;
+	return (point);
+}
 static void	ft_new_camera(t_fdf *data);
 void		ft_press(void *param);
 
@@ -72,3 +79,4 @@ void	ft_press(void *param)
 		ft_new_camera(data);
 	ft_draw(data);
 }
+

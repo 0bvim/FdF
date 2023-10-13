@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 07:00:31 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/13 02:52:43 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/13 07:25:51 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ obj:
 
 .SILENT:
 $(MLX): 
-	@cd MLX42 && cmake -B build
+	@cd MLX42 && cmake -B build -DDEBUG=1
 	@cd MLX42 && cmake --build build -j4
 
 obj/%.o: %.c

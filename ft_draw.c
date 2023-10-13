@@ -6,14 +6,26 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 00:49:43 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/13 01:34:21 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/13 08:48:46 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-static void		ft_drawlines(int32_t x, int32_t y, t_fdf *data);
-static int32_t	ft_get(int32_t x, int32_t y, t_fdf *data);
+static int32_t	ft_get(int32_t x, int32_t y, t_fdf *data)
+{
+	return (data->coords[y * data->map_width + x].height);
+}
+
+static void	ft_drawlines(int32_t x, int32_t y, t_fdf *data)
+{
+	if (x != data->map_width - 1)
+		ft_draw_line(data->canvas, ft_project(x, y, ft_get(x, y, data), &data \
+		->camera), ft_project(x + 1, y, ft_get(x + 1, y, data), &data->camera));
+	if (y != data->map_height - 1)
+		ft_draw_line(data->canvas, ft_project(x, y, ft_get(x, y, data), &data \
+		->camera), ft_project(x, y + 1, ft_get(x, y + 1, data), &data->camera));
+}
 
 void	ft_draw(t_fdf *data)
 {
@@ -33,21 +45,4 @@ void	ft_draw(t_fdf *data)
 		}
 		y++;
 	}
-}
-
-static void	ft_drawlines(int32_t x, int32_t y, t_fdf *data)
-{
-	if (x != data->map_width - 1)
-		ft_draw_line(data->canvas, ft_project(x, y, ft_get(x, y, data),
-				&data->camera), ft_project(x + 1, y, ft_get(x + 1, y, data),
-				&data->camera));
-	if (y != data->map_height - 1)
-		ft_draw_line(data->canvas, ft_project(x, y, ft_get(x, y, data),
-				&data->camera), ft_project(x, y + 1, ft_get(x, y + 1, data),
-				&data->camera));
-}
-
-static int32_t	ft_get(int32_t x, int32_t y, t_fdf *data)
-{
-	return (data->coords[y * data->map_width + x].height);
 }

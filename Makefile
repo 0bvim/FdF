@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 07:00:31 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/13 00:53:32 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/13 02:52:43 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ CFLAGS = -Wall -Wextra -Werror -g3
 #******************************************************************************#
 #				     FILES				       #
 #******************************************************************************#
-CFILES = main.c ft_error.c ft_parse_map.c ft_movement.c ft_draw.c
+CFILES = main.c ft_error.c ft_parse_map.c ft_movement.c ft_draw.c \
+		 ft_drawline.c ft_project.c
 
 OBJ_DIR = ./obj/
 

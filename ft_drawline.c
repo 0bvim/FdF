@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 00:58:16 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/13 02:21:28 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/13 05:37:26 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ static void	ft_set_pixel(mlx_image_t *canvas, t_point point, int32_t color);
 void	ft_draw_line(mlx_image_t *canvas, t_point s, t_point e)
 {
 	t_point	delta;
-	t_point	incr
-	t_point	cur
+	t_point	incr;
+	t_point	cur;
 	int32_t	error;
 
 	ft_setup(s, e, &delta, &incr);
@@ -34,7 +34,7 @@ void	ft_draw_line(mlx_image_t *canvas, t_point s, t_point e)
 		if (error >= 0)
 		{
 			cur.y += incr.y;
-			error -= 2 * delta.x
+			error -= 2 * delta.x;
 		}
 		if (error < 0)
 		{

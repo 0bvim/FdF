@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 16:27:56 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/12 11:37:22 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/13 05:53:51 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 int32_t	ft_isspace(int32_t c);
+t_i32	ft_abs(t_i32 val);
 t_i32	ft_max(t_i32 valA, t_i32 valB);
 t_i32	ft_min(t_i32 valA, t_i32 valB);
 

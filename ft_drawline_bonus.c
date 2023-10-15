@@ -1,16 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_drawline.c                                      :+:      :+:    :+:   */
+/*   ft_drawline_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 00:58:16 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/14 20:34:11 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/15 00:33:43 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fdf.h"
+#include "fdf_bonus.h"
+
+static uint32_t	rdm_color(int32_t seed)
+{
+	static uint32_t	result;
+
+	result = result + (uint64_t)rdm_color * seed;
+	return (result);
+}
 
 static void	ft_set_pixel(mlx_image_t *canvas, t_point point, int32_t color)
 {
@@ -53,7 +61,7 @@ void	ft_draw_line(mlx_image_t *canvas, t_point s, t_point e)
 	cur = e;
 	while (true)
 	{
-		ft_set_pixel(canvas, cur, 0xFFFFFF77);
+		ft_set_pixel(canvas, cur, rdm_color(0xFF));
 		if (cur.x == s.x && cur.y == s.y)
 			break ;
 		if (error >= 0)

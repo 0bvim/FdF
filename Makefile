@@ -6,7 +6,7 @@
 #    By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/06 07:00:31 by vde-frei          #+#    #+#              #
-#    Updated: 2023/10/13 08:57:52 by vde-frei         ###   ########.fr        #
+#    Updated: 2023/10/14 20:57:46 by vde-frei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,10 @@ CFLAGS = -Wall -Wextra -Werror -g3
 CFILES = main.c ft_error.c ft_parse_map.c ft_movement.c ft_draw.c \
 		 ft_drawline.c ft_project.c
 
+BFILES = main_bonus.c ft_error_bonus.c ft_parse_map_bonus.c \
+			ft_movement_bonus.c ft_draw_bonus.c	ft_drawline_bonus.c \
+			ft_project_bonus.c
+
 OBJ_DIR = ./obj/
 
 OBJ = $(addprefix $(OBJ_DIR), $(CFILES:%.c=%.o))
@@ -47,7 +51,11 @@ OBJ = $(addprefix $(OBJ_DIR), $(CFILES:%.c=%.o))
 INCLUDES = -I./ -I./lib/libft -I./MLX42/include/MLX42
 LINCLUDES = -L./lib/libft -lft
 MLX = MLX42/build/libmlx42.a
-	   
+
+ifdef WITH_BONUS
+	CFILES = $(BFILES)
+endif
+
 all : $(NAME)
 
 obj: 
@@ -71,6 +79,9 @@ $(NAME): $(MLX) obj $(OBJ)
 	@cc $(CFLAGS) -I ./ -c $< -o $@
 	@printf "$(GREEN)Compiling FdF %d%%\r$(RESET)" $$(echo $$(($(COUNT) * 100 / $(words $(CFILES)))))
 
+bonus:
+	@make WITH_BONUS=TRUE --no-print-directory
+
 clean :
 	@make clean -sC lib/libft/
 	@rm -rf MLX42/build
@@ -85,4 +96,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY: clean fclean re all bonus
+.PHONY: clean bonus fclean re all bonus

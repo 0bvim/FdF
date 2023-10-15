@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 00:58:16 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/10/15 00:33:43 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/10/15 09:45:59 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static void	ft_set_pixel(mlx_image_t *canvas, t_point point, int32_t color)
 	y = (uint32_t)point.y;
 	if (canvas && point.x > 0 && point.y > 0)
 	{
-		if (x < canvas->width && y >= 0 && y < canvas->height)
+		if ((x < canvas->width) && (y > 0 && y < canvas->height))
 			mlx_put_pixel(canvas, point.x, point.y, color);
 	}
 }

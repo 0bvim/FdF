@@ -25,7 +25,7 @@ $ cmake -B build
 $ cmake --build build -j4 # or do make -C build -j4
 $ cd ../
 ```
-> Ps: If you are in 42 school machine, you need to change update your cmake to `3.18` or above
+> Ps: If you are in 42 school machine, you need to change update your cmake to `3.18` or above.
 > If you can't update, change version requirement in file inside of MLX42 directory:
 ```
 $ cd MLX42/

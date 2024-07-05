@@ -1,24 +1,20 @@
 # FdF
 This project is about representing a landscape as a 3D object
 
-`'$' means that you need to run this command in terminal.`
-### clone with gh
-```
-$ gh repo clone vinicius-f-pereira/FdF
+---
+
+## ***Clone the project***
+```link
+git clone git@github.com:0bvim/FdF.git
 ```
 
-### clone with ssh
-```
-$ git@github.com:vinicius-f-pereira/FdF.git
-```
-
-### then cd to FdF repository and download MLX42 from codam
+## ***Go to FdF repository and download MLX42 from codam***
 ```
 $ cd FdF
 $ git clone https://github.com/codam-coding-college/MLX42.git
 ```
 
-### Now you need to build MLX with cmake and back to FdF directory 
+### ***Now you need to build MLX with cmake and back to FdF directory***
 ```
 $ cd MLX42
 $ cmake -B build

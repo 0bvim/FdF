@@ -1,5 +1,6 @@
 # FdF
 This project is about representing a landscape as a 3D object
+> Note: I'll refactor this project soon.
 
 ---
 
